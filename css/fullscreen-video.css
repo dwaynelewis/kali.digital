@@ -1,0 +1,76 @@
+/* misc styles */
+h1, h2, p { font-family: Helvetica, sans-serif; }
+h1 { font-weight: 500; }
+h2 { text-transform: uppercase; font-weight: 300; }
+p { line-height: 1.35em; font-weight: 100;}
+
+/* Video - fullscreen (full height, crop width) */
+.video-fullscreen-wrapper {
+    position: absolute;
+    display: flex;
+    display:-webkit-box;
+    display:-webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+}
+.video-fullscreen-wrapper video {
+    position: absolute;
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+    top: 0px;
+    z-index: 1;
+}
+
+/* Text overlay sample (centerred) */
+.video-overlay-content {
+    color: black;
+    font-size: 2.5em;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 0px 10vw;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+/* Placeholder for any content diaplyed below the fullscreen video */
+/* moves content down the height of the page (100vh), with a 30px top margin so that the video doesn't cover it */
+.video-fullscreen-page-content-wrapper {
+    position: relative;
+    margin-top: calc(100vh + 30px); 
+}
+
+/* MEDIA QUERIES */
+
+/* Smartphone screen, any orientation */
+@media (max-width: 560px){
+    .video-fullscreen-wrapper {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    /* NOTE: for a custom query for landscape orientation, cropping height, set video height to auto & width to 100vw */
+    .video-fullscreen-wrapper video {
+        height: 100vh;
+        width: auto;
+        top: 0px;
+    }
+    
+    .video-overlay-content {
+        /* custom headline styling for small screens go here */
+        font-size: 2.5em;
+    }
+}
