@@ -404,20 +404,20 @@
 	  </div>
 	
 		<div id="ques5" class="question">
-		<p>5/7 Are you content with your Google listing position?</p>
+		<p>5/10 Are you content with your Google listing position?</p>
 		<button id = "choice5a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
 		<button id = "choice5b" type="button" class="btn btn-outline-light text-light">No</button><br>
 		<button id = "choice5c" type="button" class="btn btn-outline-light text-light">N/A</button>
 		</div>
 	
 		<div id="ques6" class="question">
-		  <p>6/7 Do you know what is the lifetime value of a customer?</p>
+		  <p>6/10 Do you know what is the lifetime value of a customer?</p>
 		<button id = "choice6a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
 		<button id = "choice6b" type="button" class="btn btn-outline-light text-light">No</button>
 	  </div>
 	
 		<div id="ques7" class="question">
-		  <p>7/7 Do you sell to a niche?</p>
+		  <p>7/10 Do you sell to a niche?</p>
 		<button id = "choice7a" type="button" class="btn btn-outline-light text-light">Him/Her</button><br>
 		<button id = "choice7b" type="button" class="btn btn-outline-light text-light">Even</button><br>
 		<button id = "choice7c" type="button" class="btn btn-outline-light text-light">You</button>
@@ -426,8 +426,8 @@
 		<div id="ques8" class="question">
 		  <p>8/10 Has your Google My Business account been setup??</p>
 		<button id = "choice8a" type="button" class="btn btn-outline-light text-light">Good</button><br>
-		<button id = "choice8b" type="button" class="btn btn-outline-light text-light">Not yet</button><br>
-		<button id = "choice8c" type="button" class="btn btn-outline-light text-light">Bad</button>
+		<button id = "choice8b" type="button" class="btn btn-outline-light text-light">No</button><br>
+		<!-- <button id = "choice8c" type="button" class="btn btn-outline-light text-light">Bad</button> -->
 	  </div>
 	
 		<div id="ques9" class="question">
@@ -438,7 +438,7 @@
 	  </div>
 	
 		<div id="ques10" class="question">
-		  <p>10/10 Is he/she arrogant?</p>
+		  <p>10/10 Are you comfortable in front of a video camera?</p>
 		<button id = "choice10a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
 		<button id = "choice10b" type="button" class="btn btn-outline-light text-light">No</button>
 	  </div>
@@ -808,31 +808,31 @@
 				  ans4 === true && ans5 === true && ans6 === true &&
 				   ans7 === true && ans8 === true && ans9 === true && ans10 === false){
 					  document.getElementById("demo").style.display = "block";
-					document.getElementById("demo").innerHTML = "Too good to be true! KEEPER!";
+					document.getElementById("demo").innerHTML = "Set up and optimize your Google My Business & Social Media listings";
 				  }
 	
 						else if (ans2 === true && ans3 === true && ans4 === true &&
 						 ans6 === true && ans7 === true && ans8 === true &&
 					   ans9 === true ){
 						  document.getElementById("demo").style.display = "block";
-						 document.getElementById("demo").innerHTML = "SOUNDS LIKE HUSBAND/WIFEY MATERIAL!";
+						 document.getElementById("demo").innerHTML = "Acquire a skilled SEO practitioner ";
 					  }
 	
 					  else if ((ans1 === true || ans1_5 === true) && ans2 === true && ans3 === true && ans6 === true &&
 					   ans6 === true && ans7 === true && ans8 === true &&
 					 ans9 === true ){
 						document.getElementById("demo").style.display = "block";
-					   document.getElementById("demo").innerHTML = "Might be your new man/woman!";
+					   document.getElementById("demo").innerHTML = "Becoming a recognized authority figure in your industry will benefit you";
 					}
 	
 					else if ((ans1 === true || ans1_5 === true) && ans7 === true && ans8 === true){
 					  document.getElementById("demo").style.display = "block";
-					 document.getElementById("demo").innerHTML = "Lover!";
+					 document.getElementById("demo").innerHTML = "Design a marketing campaign to show your uniqueness";
 				  }
 	
 					  else {
 						document.getElementById("demo").style.display = "block";
-						document.getElementById("demo").innerHTML = "LOSER!";
+						document.getElementById("demo").innerHTML = "Sign a pay for performance contract to improve your SEO";
 					  }
 	
 			  };
@@ -852,31 +852,32 @@
 				ans4 === true && ans5 === true && ans6 === true &&
 				 ans7 === true && ans8 === true && ans9 === true && ans10 === false){
 					document.getElementById("demo").style.display = "block";
-				  document.getElementById("demo").innerHTML = "Too good to be true! KEEPER!";
+				  document.getElementById("demo").innerHTML = "Set up and optimize your Google My Business & Social Media listings";
 				}
 	
 					  else if (ans2 === true && ans3 === true && ans4 === true &&
 					   ans6 === true && ans7 === true && ans8 === true &&
 					 ans9 === true && ans10 === false){
 						document.getElementById("demo").style.display = "block";
-					   document.getElementById("demo").innerHTML = "SOUNDS LIKE HUSBAND/WIFEY MATERIAL!";
+					   document.getElementById("demo").innerHTML = "Acquire a skilled SEO practitioner";
 					}
 	
 					else if ((ans1 === true || ans1_5 === true) && ans2 === true && ans3 === true && ans6 === true &&
 					 ans6 === true && ans7 === true && ans8 === true &&
 				   ans9 === true ){
 					  document.getElementById("demo").style.display = "block";
-					 document.getElementById("demo").innerHTML = "Might be your new man/woman!";
+					 document.getElementById("demo").innerHTML = "Becoming a recognized authority figure in your industry will benefit you";
 				  }
 	
 				  else if ((ans1 === true || ans1_5 === true) && ans7 === true && ans8 === true){
-				   document.getElementById("demo").innerHTML = "Lover!";
+				  
 					document.getElementById("demo").style.display = "block";
+					document.getElementById("demo").innerHTML = "Design a marketing campaign to show your uniqueness";
 				}
 	
 					else {
 					  document.getElementById("demo").style.display = "block";
-					  document.getElementById("demo").innerHTML = "LOSER!";
+					  document.getElementById("demo").innerHTML = "Sign a pay for performance contract to improve your SEO";
 					}
 	
 	
