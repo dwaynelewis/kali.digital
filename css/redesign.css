@@ -16,6 +16,7 @@ body {
 .page-wrapper {
   width: 100%;
   max-width: 1600px;
+  position: relative;
 }
 
 /* ___ HEADER ___ */
