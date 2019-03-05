@@ -20,6 +20,10 @@ body {
 }
 
 /* ___ HEADER ___ */
+.header-wrapper {
+  max-width: 1600px;
+  position: relative;
+}
 
 .header {
   display: flex;
@@ -32,7 +36,6 @@ body {
   z-index: 10;
   padding: 16px 12px;
   color: white;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .header-section-left {
@@ -80,8 +83,15 @@ body {
   margin: auto;
 }
 
+.banner-slider {
+  height: 50vh;
+  max-height: 50vh;
+}
+
 .banner-video {
   width: 100%;
+  min-height: 50vh;
+  object-fit: cover;
 }
 
 /*Items Grid*/
@@ -297,9 +307,6 @@ ul.slick-dots li button:before {
 
 /*MEDIA QUERIES*/
 @media (max-width: 37.5em) {
-  body {
-    padding-top: 99px;
-  }
   .nav-mobile {
     display: block;
   }
