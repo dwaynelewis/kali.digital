@@ -10,6 +10,7 @@
     <title>New Home</title>
 
     <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/royal-preloader.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
@@ -20,24 +21,6 @@
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
     <style>
-      body {
-        background: url(bdsmscreen.jpg);
-        background-repeat: repeat;
-        background-size: cover;
-        background-size: 300px 300px;
-        color: white;
-      }
-      p {
-        color: white;
-      }
-    </style>
-
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
       #questions {
         display: inline;
       }
@@ -199,13 +182,9 @@
         margin-left: auto;
         margin-right: auto;
       }
-
-      p {
-        font-size: 200%;
-      }
     </style>
   </head>
-  <body>
+  <body class="royal_preloader">
     <div class="header-wrapper">
       <div class="header">
         <!--Left part in header (all items aligned left)-->
@@ -240,36 +219,38 @@
     <div class="page-wrapper">
       <section>
         <div class="banner-slider">
-          <div class="video-container">
-            <!-- <img src="./images/block-bg-3.jpg" class="banner-video" alt="" /> -->
+          <div class="slide-container">
             <video
               preload="auto"
               autoplay=""
               muted=""
               loop=""
               playsinline=""
-              class="banner-video"
-            >
-              <source src="assets/sample-video.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <!-- <div class="video-container">
-            <video
-              preload="auto"
-              autoplay=""
-              muted=""
-              loop=""
-              playsinline=""
-              class="banner-video"
+              class="slide-media"
             >
               <source src="assets/branding.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="slide-container">
+            <img src="./images/block-bg-4.jpg" class="slide-media" alt="" />
+          </div>
+          <!-- <div class="slide-container">
+            <video
+              preload="auto"
+              autoplay=""
+              muted=""
+              loop=""
+              playsinline=""
+              class="slide-media"
+            >
+              <source src="assets/sample-video.mp4" type="video/mp4" />
             </video>
           </div> -->
         </div>
       </section>
       <section class="items-grid">
         <div class="span-3-2 block-style-1 animatedParent">
-          <div class="block-contents animated growIn ">
+          <div class="block-contents animated  ">
             <div class="block-small-heading">
               Our Philosophy
             </div>
@@ -328,21 +309,19 @@
         </div>
         <div class="span-1 block-style-4 custom-block-1">
           <div class="block-contents">
-            Testimonial Slider 1
+            Testimonial Slider 1 Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Repudiandae excepturi impedit consectetur deserunt
+            deleniti explicabo laborum voluptate quam nisi voluptas? Est
+            asperiores ipsa error ab recusandae officia consequatur a autem.
           </div>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
-          rerum deleniti dolore quidem eius sapiente doloribus iste beatae ex,
-          perferendis tempore porro amet itaque. Laboriosam reiciendis eius
-          similique voluptatum sapiente.
         </div>
         <div class="span-1 block-style-1 custom-block-2">
           <div class="block-contents">
-            Testimonial Slider 2
+            Testimonial Slider 2 Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Repudiandae excepturi impedit consectetur deserunt
+            deleniti explicabo laborum voluptate quam nisi voluptas? Est
+            asperiores ipsa error ab recusandae officia consequatur a autem.
           </div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          excepturi impedit consectetur deserunt deleniti explicabo laborum
-          voluptate quam nisi voluptas? Est asperiores ipsa error ab recusandae
-          officia consequatur a autem.
         </div>
         <div class="span-2-2 block-style-5 animatedParent">
           <div class="block-contents animated growIn">
@@ -366,9 +345,20 @@
             </div>
           </div>
         </div>
-        <div class="span-1 block-style-1  custom-block-3">
-          <div class="block-contents">
-            Video box
+        <div class="span-1 ">
+          <div class="block-contents video-block">
+            <div class="video-block-container">
+              <video
+                preload="auto"
+                autoplay=""
+                muted=""
+                loop=""
+                playsinline=""
+                class="video-block-video"
+              >
+                <source src="assets/branding.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
         </div>
       </section>
@@ -438,10 +428,20 @@
     </footer>
 
     <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/royal_preloader.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+
     <script type="text/javascript" src="js/css3-animate-it.js"></script>
 
     <script type="text/javascript">
+      Royal_Preloader.config({
+        mode: "scale_text",
+        text: "your digital solution",
+        text_colour: "#FFFFFF",
+        background: "#00539C"
+      });
+
+      /// Banner Slider
       $(document).ready(function() {
         $(".banner-slider").slick({
           autoplay: true,
