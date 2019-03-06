@@ -165,10 +165,10 @@ body {
 }
 
 .block-style-1 {
-  background-color: #3196f3;
+  background-color: #181818;
 }
 .block-style-2 {
-  background: #f4511e;
+  background: #D00000 ;
 }
 .block-style-3 {
   background: #1a961f;
@@ -183,7 +183,7 @@ body {
 /* Specific block styling (image back ground)*/
 
 .custom-block-1 {
-  background-image: url(../images/block-bg-1.jpg);
+  background-image: url(../images/miami@night.jpg);
   background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: multiply;
   background-size: cover;
@@ -207,7 +207,7 @@ body {
 }
 
 .custom-block-4 {
-  background-image: url(../images/block-bg-4.jpg);
+  background-image: url(../images/parallax-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
