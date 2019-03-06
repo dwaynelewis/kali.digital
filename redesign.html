@@ -19,170 +19,6 @@
     <link rel="stylesheet" href="./css/animations.css" />
     <link rel="stylesheet" href="./css/redesign.css" />
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
-
-    <style>
-      #questions {
-        display: inline;
-      }
-
-      #demo {
-        display: none;
-      }
-
-      #getstarted {
-        width: 100px;
-        background-color: white;
-        color: black;
-        padding: 3px;
-        font-size: 110%;
-      }
-      .question {
-        display: none;
-      }
-
-      #choice1a {
-        display: none;
-        width: 100px;
-      }
-      #choice1b {
-        display: none;
-        width: 100px;
-      }
-
-      #choice1c {
-        display: none;
-        width: 130px;
-      }
-
-      #choice2a {
-        display: none;
-        width: 100px;
-      }
-
-      #choice2b {
-        display: none;
-        width: 100px;
-      }
-
-      #choice2c {
-        display: none;
-        width: 100px;
-      }
-
-      #choice3a {
-        display: none;
-        width: 100px;
-      }
-
-      #choice3b {
-        display: none;
-        width: 100px;
-      }
-
-      #choice4a {
-        display: none;
-        width: 100px;
-      }
-
-      #choice4b {
-        display: none;
-        width: 100px;
-      }
-
-      #choice5a {
-        display: none;
-        width: 100px;
-      }
-
-      #choice5b {
-        display: none;
-        width: 100px;
-      }
-
-      #choice5c {
-        display: none;
-        width: 100px;
-      }
-
-      #choice6a {
-        display: none;
-        width: 100px;
-      }
-
-      #choice6b {
-        display: none;
-        width: 100px;
-      }
-
-      #choice7a {
-        display: none;
-        width: 100px;
-      }
-
-      #choice7b {
-        display: none;
-        width: 100px;
-      }
-
-      #choice7c {
-        display: none;
-        width: 100px;
-      }
-
-      #choice8a {
-        display: none;
-        width: 100px;
-      }
-      #choice8b {
-        display: none;
-        width: 100px;
-      }
-      #choice8c {
-        display: none;
-        width: 100px;
-      }
-
-      #choice9a {
-        display: none;
-        width: 100px;
-      }
-      #choice9b {
-        display: none;
-        width: 100px;
-      }
-
-      #choice9c {
-        display: none;
-        width: 100px;
-      }
-
-      #choice10a {
-        display: none;
-        width: 100px;
-      }
-      #choice10b {
-        display: none;
-        width: 100px;
-      }
-
-      #goodbye {
-        display: none;
-      }
-
-      #restart {
-        display: none;
-        text-align: center;
-      }
-
-      #restart a {
-        color: black;
-        background-color: white;
-        padding: 5px;
-        border-radius: 25%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    </style>
   </head>
   <body class="royal_preloader">
     <div class="header-wrapper">
@@ -303,8 +139,254 @@
         <div class="span-3-2 block-style-3 custom-block-4">
           <div class="block-contents">
             <div class="block-small-heading">
-              Free Digital Marketing Tips For Local Businesses
+              Free Digital Marketting Tips For Local Businesses
             </div>
+            <!--- PRICE ESTIMATOR QUIZ MARKUP-->
+
+            <div class="quiz-container">
+              <h3 id="opening">
+                Not clear how to start marketing your local business? Answer a
+                few questions and we will give you suggestions on how to get
+                started.
+              </h3>
+
+              <button id="getstarted">Click to get started</button>
+              <div id="ques1" class="question">
+                <p>1/10 Are you a new (under 1 year) or existing business?</p>
+                <button
+                  id="choice1a"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  New</button
+                ><br />
+                <button
+                  id="choice1b"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Existing</button
+                ><br />
+                <button
+                  id="choice1c"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Existing over 10 years
+                </button>
+              </div>
+
+              <h2 id="demo"></h2>
+
+              <!-- <button id="ques1-5">Are you ready for the next question?</button> -->
+
+              <div id="ques2" class="question">
+                <p>2/10 What are your goals?</p>
+                <button
+                  id="choice2a"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Brand Awareness</button
+                ><br />
+                <button
+                  id="choice2b"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Increasing Sales</button
+                ><br />
+                <button
+                  id="choice2c"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Customer Loyalty
+                </button>
+              </div>
+
+              <div id="ques3" class="question">
+                <p>3/10 Do you sell products or services?</p>
+                <button
+                  id="choice3a"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Products</button
+                ><br />
+                <button
+                  id="choice3b"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Service
+                </button>
+              </div>
+
+              <div id="ques4" class="question">
+                <p>4/10 Do you sell online?</p>
+                <button
+                  id="choice4a"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Yes</button
+                ><br />
+                <button
+                  id="choice4b"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  No
+                </button>
+              </div>
+
+              <div id="ques5" class="question">
+                <p>5/10 Are you content with your Google listing position?</p>
+                <button
+                  id="choice5a"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Yes</button
+                ><br />
+                <button
+                  id="choice5b"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  No</button
+                ><br />
+                <button
+                  id="choice5c"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  N/A
+                </button>
+              </div>
+
+              <div id="ques6" class="question">
+                <p>
+                  6/10 Do you know what is the lifetime value of a customer?
+                </p>
+                <button
+                  id="choice6a"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Yes</button
+                ><br />
+                <button
+                  id="choice6b"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  No
+                </button>
+              </div>
+
+              <div id="ques7" class="question">
+                <p>7/10 Do you sell to a specific gender?</p>
+                <button
+                  id="choice7a"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Women</button
+                ><br />
+                <button
+                  id="choice7b"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Men</button
+                ><br />
+                <button
+                  id="choice7c"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Both
+                </button>
+              </div>
+
+              <div id="ques8" class="question">
+                <p>8/10 Has your Google My Business account been setup??</p>
+                <button
+                  id="choice8a"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Good</button
+                ><br />
+                <button
+                  id="choice8b"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Not yet</button
+                ><br />
+                <button
+                  id="choice8c"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Bad
+                </button>
+              </div>
+
+              <div id="ques9" class="question">
+                <p>9/10 What is your monthly marketing budget?</p>
+                <button
+                  id="choice9a"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  $0-$1000</button
+                ><br />
+                <button
+                  id="choice9b"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  $1000-$2500</button
+                ><br />
+                <button
+                  id="choice9c"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  $2500-
+                </button>
+              </div>
+
+              <div id="ques10" class="question">
+                <p>10/10 Are you comfortable in front of a video camera?</p>
+                <button
+                  id="choice10a"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  Yes</button
+                ><br />
+                <button
+                  id="choice10b"
+                  type="button"
+                  class="btn btn-outline-light text-light"
+                >
+                  No
+                </button>
+              </div>
+
+              <div id="goodbye">
+                <h4>
+                  If you would like a one on one assesment, please contact us
+                  today!
+                </h4>
+              </div>
+            </div>
+            <!----END PRICE ESTIMATOR QUIZ-->
           </div>
         </div>
         <div class="span-1 block-style-4 custom-block-1">
@@ -385,9 +467,7 @@
         <div class="animated fadeInUpShort">
           <h2>Get in Touch!</h2>
           <div>
-            <p>
-              tel:844-551-0671
-            </p>
+            <p>tel: <a href="tel:8445510671">844-551-0671</a></p>
             <p>
               <a href="mailto:hello@kali.digital">hello@kali.digital</a>
             </p>
@@ -430,8 +510,8 @@
     <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
     <script type="text/javascript" src="js/royal_preloader.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
-
     <script type="text/javascript" src="js/css3-animate-it.js"></script>
+    <script type="text/javascript" src="js/estimator-quiz.js"></script>
 
     <script type="text/javascript">
       Royal_Preloader.config({
