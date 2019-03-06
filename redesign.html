@@ -391,18 +391,40 @@
         </div>
         <div class="span-1 block-style-4 custom-block-1">
           <div class="block-contents">
-            Testimonial Slider 1 Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Repudiandae excepturi impedit consectetur deserunt
-            deleniti explicabo laborum voluptate quam nisi voluptas? Est
-            asperiores ipsa error ab recusandae officia consequatur a autem.
+            Testimonials
+            <div class="testimonial-slider-container">
+              <div id="testimonial-slider-1" class="testimonial-slider">
+                <div class="testimonial-slide-container">
+                  <p>
+                    Truly Amazing Work!
+                  </p>
+                </div>
+                <div class="testimonial-slide-container">
+                  <p>
+                    Add testimonial contents here...
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="span-1 block-style-1 custom-block-2">
+        <div class="span-1 block-style-3 ">
           <div class="block-contents">
-            Testimonial Slider 2 Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Repudiandae excepturi impedit consectetur deserunt
-            deleniti explicabo laborum voluptate quam nisi voluptas? Est
-            asperiores ipsa error ab recusandae officia consequatur a autem.
+            Testimonials
+            <div class="testimonial-slider-container">
+              <div id="testimonial-slider-2" class="testimonial-slider">
+                <div class="testimonial-slide-container">
+                  <p>
+                    Super cool. Highly Recommended!
+                  </p>
+                </div>
+                <div class="testimonial-slide-container">
+                  <p>
+                    ... Show off what the clients say about you ...
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="span-2-2 block-style-5 animatedParent">
@@ -527,6 +549,22 @@
           autoplay: true,
           arrows: false,
           autoplaySpeed: 10000,
+          dots: true,
+          pauseOnHover: true
+        });
+
+        $("#testimonial-slider-1").slick({
+          autoplay: true,
+          arrows: false,
+          autoplaySpeed: 4000,
+          dots: true,
+          pauseOnHover: true
+        });
+
+        $("#testimonial-slider-2").slick({
+          autoplay: true,
+          arrows: false,
+          autoplaySpeed: 4000,
           dots: true,
           pauseOnHover: true
         });

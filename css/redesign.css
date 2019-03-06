@@ -311,6 +311,41 @@ body {
 }
 
 /*QUIZ STYLE END*/
+
+.testimonial-slider-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonial-slider {
+  height: 100%;
+}
+
+.testimonial-slider .slick-list,
+.testimonial-slider .slick-track {
+  height: 100%;
+}
+
+.testimonial-slide-container {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.testimonial-slide-container p {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
 .footer {
   max-width: 1600px;
   width: 100%;
