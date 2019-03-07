@@ -97,6 +97,10 @@ body {
   max-height: 80vh;
 }
 
+#vid-mobile {
+  display: none;
+}
+
 .slide-container {
   display: flex;
   width: 100%;
