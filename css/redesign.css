@@ -83,8 +83,8 @@ body {
 
 /* _____ Banner Styles _____ */
 .banner-slider {
-  height: 50vh;
-  max-height: 50vh;
+  height: 80vh;
+  max-height: 80vh;
 }
 
 .slide-container {
@@ -181,7 +181,7 @@ body {
  
 }
 .block-style-5 {
-  background: rgb(81, 14, 121);
+  background: navy;
   color: whitesmoke;
 }
 
@@ -436,6 +436,12 @@ ul.slick-dots li button:before {
 
 /*MEDIA QUERIES*/
 @media (max-width: 37.5em) {
+
+  .banner-slider {
+    height: 50vh;
+    max-height: 50vh;
+  }
+  
   .nav-mobile {
     display: block;
   }

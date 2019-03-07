@@ -23,7 +23,7 @@
         mode:        'scale_text',
         text:        'your digital solution',
         text_colour: '#FFFFFF',
-		background:  '#00539C'
+		background:  '#d00000'
 	});
 
 

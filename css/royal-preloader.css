@@ -29,6 +29,12 @@ body.royal_preloader {
     background-image: -ms-radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
     background-image: -o-radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+
+    /* background-image: -webkit-radial-gradient(circle, #D00000,#D00000);
+    background-image: -moz-radial-gradient(circle, #D00000,#D00000);
+    background-image: -ms-radial-gradient(circle, #D00000,#D00000);
+    background-image: -o-radial-gradient(circle, #D00000,#D00000);
+    background-image: radial-gradient(circle, #D00000,#D00000); */
 }
 #royal_preloader.complete {
     opacity: 0;
