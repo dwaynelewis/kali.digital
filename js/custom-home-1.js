@@ -21,9 +21,9 @@
 
 	Royal_Preloader.config({
         mode:        'scale_text',
-        text:        'your digital solution',
+        text:        'digital solutions',
         text_colour: '#FFFFFF',
-		background:  'navy'
+		background:  '#d00000'
 	});
 
 
