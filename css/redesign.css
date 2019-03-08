@@ -229,7 +229,7 @@ body {
   background-image: url(../images/parallax-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #c13827;
+  /* background-color: #c13827; */
   background-blend-mode: multiply;
   color: #dadada;
 }
