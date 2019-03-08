@@ -683,6 +683,12 @@ ul.slick-dots li button:before {
   .block-contents {
     padding: 16px;
   }
+  .video-block {
+    padding: 0;
+  }
+  .no-clip-video {
+    object-fit: contain;
+  }
   .block-small-heading {
     margin: 0 0 20px;
   }
