@@ -22,6 +22,61 @@
     <meta property="og:image" content="//yourdomain.com/image-name.jpg" />
     <meta property="og:type" content="website" />
 
+    <!-- CRITICAL CSS, we need this before anything else-->
+    <style>
+      #preloader {
+        background: #f00000;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .preload-image {
+        height: 60px;
+        max-height: 60px;
+      }
+      @-ms-keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .blink-image {
+        -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+        animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: black;
+      }
+      .blink-image img {
+        margin-bottom: 20px;
+      }
+    </style>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/royal-preloader.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
@@ -29,10 +84,9 @@
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/ionicons.min.css" />
     <link rel="shortcut icon" href="favicon.png" />
-
     <link rel="stylesheet" href="./css/animations.css" />
     <link rel="stylesheet" href="./css/redesign.css" />
-    <script type="text/javascript" src="js/custom-home-1.js"></script>
+    <!-- <script type="text/javascript" src="js/custom-home-1.js"></script> -->
     <!-- <script type="text/javascript" src="js/modernizr.custom.js"></script> -->
 
     <!-- Google Tag Manager -->
@@ -50,7 +104,13 @@
     </script>
     <!-- End Google Tag Manager -->
   </head>
-  <body class="royal_preloader">
+  <body>
+    <div id="preloader">
+      <div class="blink-image">
+        <img src="images/logo-lighter.png" alt="logo" class="preload-image" />
+        <div>Your Digital Solution</div>
+      </div>
+    </div>
     <div class="header-wrapper">
       <div class="header">
         <!--Left part in header (all items aligned left)-->
@@ -225,8 +285,8 @@
             </div>
             Hi there! We’re Kali Digital. We’re a full-service marketing agency,
             built for the now. Day in, day out, we propel brands to the next
-            level by garnering attention and branding what sets them apart. And we
-            bring heart to that hustle, because empathy is our m.o..<br />
+            level by garnering attention and branding what sets them apart. And
+            we bring heart to that hustle, because empathy is our m.o..<br />
             Our success derives from engineering sophisticated websites that are
             fast, aesthetically pleasing, and produce expected outcomes. We
             utilize SEO best practices to get websites ranked and PPC
@@ -748,11 +808,11 @@
     </footer>
 
     <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
-    <script type="text/javascript" src="js/royal_preloader.min.js"></script>
+    <!-- <script type="text/javascript" src="js/royal_preloader.min.js"></script> -->
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/css3-animate-it.js"></script>
     <script type="text/javascript" src="js/estimator-quiz.js"></script>
-    <script type="text/javascript" src="js/custom-home-1.js"></script>
+    <!-- <script type="text/javascript" src="js/custom-home-1.js"></script> -->
 
     <script type="text/javascript">
       // Royal_Preloader.config({
@@ -760,6 +820,14 @@
       //   text: "your digital solution",
       //   text_colour: "#FFFFFF",
       //   background: "#d00000"
+
+      $(document).ready(function($) {
+        $(window).load(function() {
+          $("#preloader").fadeOut("slow", function() {
+            $(this).remove();
+          });
+        });
+      });
       // });
 
       /// Banner Slider
