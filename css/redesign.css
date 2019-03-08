@@ -80,16 +80,82 @@ body {
   visibility: hidden;
 }
 
-.navigation ul {
+.nav-desktop ul {
   margin: 0;
   padding: 0;
   list-style: none;
   display: inline-flex;
 }
 
-.navigation ul li {
+.nav-desktop ul li {
   list-style-type: none;
   margin: 0 8px;
+}
+
+.nav-desktop a {
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.nav-desktop a:hover {
+  color: #f00000;
+}
+
+.nav-desktop .menu-parent {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.nav-desktop .menu-parent:hover {
+  color: #f00000;
+}
+.nav-desktop .menu-parent ul {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  left: -10px;
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0;
+  padding: 5px 0 0;
+  background: #f00000;
+  min-width: 120px;
+  z-index: 110;
+}
+
+.nav-desktop .menu-parent #sub-menu-contact {
+  right: 0;
+  left: unset;
+  width: 130px;
+}
+
+.nav-desktop .menu-parent ul li {
+  padding: 0;
+  margin: 0;
+}
+.nav-desktop .menu-parent ul a {
+  padding: 5px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  display: flex;
+}
+
+.nav-desktop .menu-parent:hover ul {
+  display: flex;
+}
+
+.nav-desktop .menu-parent ul a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.call-link a {
+  flex-direction: column;
+}
+
+.call-link a .phone-num {
+  font-size: 1.2em;
 }
 
 /* _____ Banner Styles _____ */
