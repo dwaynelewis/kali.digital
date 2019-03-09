@@ -76,6 +76,13 @@
       .blink-image img {
         margin-bottom: 20px;
       }
+      
+    #branding{
+display:none;
+    }
+
+
+    
     </style>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/royal-preloader.css" />
@@ -105,13 +112,7 @@
     <!-- End Google Tag Manager -->
 
 
-    <style>
-    #vid-dancingman{
-display:none;
-    }
-
-
-    </style>
+  
   </head>
   <body>
     <div id="preloader">
@@ -307,7 +308,7 @@ display:none;
       <div>
         <div class="banner-slider">
 
-            <div class="slide-container" id="vid-desktop">
+            <div class="slide-container">
                 <video 
                   preload="auto"
                   autoplay=""
@@ -323,7 +324,7 @@ display:none;
                 </video>
               </div>
 
-          <!-- <div class="slide-container" >
+          <!-- <div class="slide-container">
             <video id="vid-dancingman"
               preload="auto"
               autoplay=""
@@ -342,7 +343,7 @@ display:none;
             <img src="./images/agencyold.jpg" class="slide-media" alt="" />
           </div> -->
 
-          <!-- <div class="slide-container " id="vid-mobile">
+          <!-- <div class="slide-container ">
             <video 
               preload="auto"
               autoplay=""
@@ -817,7 +818,7 @@ display:none;
         <div class="span-1 ">
           <div class="block-contents video-block">
             <div class="video-block-container">
-              <video
+              <video id="branding"
                 preload="auto"
                 autoplay=""
                 muted=""
@@ -963,6 +964,14 @@ display:none;
           $(".mobile-nav-container").addClass("is-closed");
           $(".mobile-nav-container").removeClass("is-open");
         });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function() {
+        $(function(){
+          $("#branding").delay(3000).fadeIn("slow");        
+          }); 
       });
     </script>
   </body>
