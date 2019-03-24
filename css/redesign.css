@@ -496,7 +496,7 @@ ul.social-list-display li {
 .footer {
   max-width: 1600px;
   width: 100%;
-  background: #232323;
+  background:  #d00000;
   padding: 40px 40px;
   color: #fff;
   display: grid;
@@ -510,7 +510,7 @@ ul.social-list-display li {
 
 .footer h2 {
   margin: 0 0 12px;
-  color: #d00000;
+  color:#232323;
 }
 
 .footer a {
