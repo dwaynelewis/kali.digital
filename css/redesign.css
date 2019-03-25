@@ -492,11 +492,68 @@ ul.social-list-display li {
   text-align: center;
   margin: 20px;
 }
+/* __ CLIENTS SECTION __ */
 
+.clients {
+  padding: 40px;
+  background: #232323;
+}
+
+.clients .title {
+  color: #d00000;
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-style: dotted;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  padding: 20px 0 0;
+}
+
+.clients-grid div {
+  height: 100%;
+}
+
+.clients-grid .client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 150px;
+}
+
+.clients-grid .client img {
+  max-width: 100%;
+  min-height: 50px;
+}
+
+.clients .seekedu img {
+  max-height: 100px;
+}
+.clients .liveinfla {
+  font-size: 25px;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.clients .clark-connections img {
+  max-height: 200px;
+}
+.clients .daphane {
+  font-size: 25px;
+  font-family: "Anton", sans-serif;
+}
+
+.clients .dada img {
+  max-height: 50px;
+}
+
+/* __FOOTER STYLES __ */
 .footer {
   max-width: 1600px;
   width: 100%;
-  background:  #d00000;
+  background: #d00000;
   padding: 40px 40px;
   color: #fff;
   display: grid;
@@ -510,7 +567,7 @@ ul.social-list-display li {
 
 .footer h2 {
   margin: 0 0 12px;
-  color:#232323;
+  color: #232323;
 }
 
 .footer a {
@@ -775,5 +832,9 @@ ul.slick-dots li button:before {
 
   .services-block-contents > div {
     margin-bottom: 30px;
+  }
+
+  .clients-grid {
+    grid-template-columns: 1fr;
   }
 }
