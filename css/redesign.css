@@ -833,4 +833,8 @@ ul.slick-dots li button:before {
   .services-block-contents > div {
     margin-bottom: 30px;
   }
+
+  .clients-grid {
+    grid-template-columns: 1fr;
+  }
 }
