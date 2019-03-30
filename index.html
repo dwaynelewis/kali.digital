@@ -85,6 +85,10 @@
         margin-bottom: 20px;
       }
 
+      #main-video{
+        display: none;
+      }
+
       #branding {
         display: none;
       }
@@ -192,9 +196,9 @@
                     <ul id="sub-menu-contact">
                       <li>
                         <div class="call-link">
-                          <a href="tel:8445510671"
+                          <a href="tel:8009509273"
                             >call now
-                            <span class="phone-num">844-551-0671</span></a
+                            <span class="phone-num">800-950-9273</span></a
                           >
                         </div>
                       </li>
@@ -281,7 +285,7 @@
                     </div>
                     <ul id="sub-menu-contact" style="display: none">
                       <li>
-                        <a href="tel:8445510671">call now 844-551-0671</a>
+                        <a href="tel:8009509273">call now 800-950-9273</a>
                       </li>
                       <li>
                         <a
@@ -311,9 +315,10 @@
               loop=""
               playsinline=""
               class="slide-media no-clip-video"
+              id="main-video"
             >
               <source
-                src="https://player.vimeo.com/external/322588333.hd.mp4?s=8e7f547e7bbcf800e25558fca2c6a15fe1560323&profile_id=175"
+                src="assets/kali_digital_keystrokes.mp4"
                 type="video/mp4"
               />
             </video>
@@ -904,7 +909,7 @@
         <div class="animated fadeInUpShort">
           <h2>Get in Touch!</h2>
           <div>
-            <p>tel: <a href="tel:8445510671">844-551-0671</a></p>
+            <p>tel: <a href="tel:8009509273">800-950-9273</a></p>
             <p>
               <a href="mailto:hello@kali.digital">hello@kali.digital</a>
             </p>
@@ -1014,6 +1019,16 @@
         });
       });
     </script>
+
+<script>
+  $(document).ready(function() {
+    $(function() {
+      $("#main-video")
+        .delay(1000)
+        .fadeIn("slow");
+    });
+  });
+</script>
 
     <script>
       $(document).ready(function() {
