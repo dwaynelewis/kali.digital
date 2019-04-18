@@ -18,7 +18,7 @@
 .sidebar-list-two li a:hover,
 #ajax-form button:hover,
 #cd-zoom-in, #cd-zoom-out{
-	background-color:   white;
+	background-color:   #141414;
 }
 .cbp-af-header.cbp-af-header-shrink .menu ul li ul li a.curent-multi-page,
 .cbp-af-header.cbp-af-header-shrink .menu ul li ul li a.curent-multi-page:hover,
@@ -34,7 +34,7 @@
 .comm-link,
 .sidebar-list-one li a:hover,
 .comment a{
-	color:#9e1030;
+	color:white ;
 }
 .menu ul li:hover a.shadow-hover{
 	text-shadow: -7px 6px 0  #99cfff;

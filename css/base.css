@@ -50,12 +50,12 @@
 /* #Basic Styles
 ================================================== */
 body {
-	background: #fff;
+	background: #141414 ;
 	font-family: 'Lato', sans-serif;
 	font-weight:400;
 	font-size: 15px;
 	line-height:23px;
-	color:#636363;
+	color:whitesmoke;
 	overflow-x:hidden;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	/* text-shadow: .5px .5px .5px red; */
@@ -68,7 +68,7 @@ body {
 /* #Typography
 ================================================== */
 h1, h2, h3, h4, h5, h6 {
-	color: #414141;
+	color:white ;
 	font-family: 'Montserrat', sans-serif;
 	font-weight:700;
 	text-align:center;

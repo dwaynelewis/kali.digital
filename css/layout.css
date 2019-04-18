@@ -627,14 +627,14 @@ Mobile style's
 @media only screen and (max-width: 1199px) {
 
 	.menu-back{
-		background: #00539C;
+		background: darkred ;
 		-webkit-transition : all 0.3s ease-out;
 		-moz-transition : all 0.3s ease-out;
 		-o-transition :all 0.3s ease-out;
 		transition : all 0.3s ease-out;
 	}
 	.cbp-af-header.cbp-af-header-shrink {
-		background:#0088ff;
+		background:red;
 		-webkit-transition : all 0.3s ease-out;
 		-moz-transition : all 0.3s ease-out;
 		-o-transition :all 0.3s ease-out;
@@ -2137,7 +2137,7 @@ figure.vimeo a img, figure.youtube a img {
 	font-weight:400;
 	font-size: 20px;
 	line-height:28px;
-	color:#343148;
+	color:white ;
 	opacity:.6;
 	font-style: italic;
 }
@@ -2294,7 +2294,7 @@ figure.vimeo a img, figure.youtube a img {
 }
 .quote p{
 	text-align:center;
-	color: #212121;
+	color: gray ;
 	font-family: 'Montserrat', sans-serif;
 	font-weight:700;
 	font-size: 16px; 
@@ -3290,10 +3290,10 @@ figure.vimeo a img, figure.youtube a img {
 	font-weight:700;
 	font-size: 14px;
 	line-height:24px;
-	color:#00539C;	
+	color:red;	
 }
 .footer .mail-phone a{
-	color:#00539C;	
+	color:red;	
 }
 .footer .mail-phone a:hover{
 	color:darkred;	
@@ -3324,7 +3324,7 @@ figure.vimeo a img, figure.youtube a img {
 	font-size: 15px;
 	line-height:40px;
 	width:40px;
-	color:#00539C;
+	color:red;
 	opacity:1;
 	margin:0;
 	padding:0;
