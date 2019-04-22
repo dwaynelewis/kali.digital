@@ -37,7 +37,7 @@
 	color:white ;
 }
 .menu ul li:hover a.shadow-hover{
-	text-shadow: -7px 6px 0  grey;
+	text-shadow: -7px 6px 0  grey ;
 }
 .menu ul li a.curent-shadow{
 	text-shadow: -7px 6px 0 grey ;
