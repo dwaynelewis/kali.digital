@@ -1176,7 +1176,7 @@ ul.meta-info li a i {
     z-index: -1;
     height: 100%;
     width: 100%;
-    background-color: #1589ca;
+    background-color: #f0f0e4;
     opacity: 0.95;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
 }
@@ -1189,27 +1189,27 @@ ul.meta-info li a i {
     font-size: 28px;
     line-height: 31px;
     margin-bottom: 23px;
-    color:#f5f5f5;
+    color: #555;
     letter-spacing: 0;
 }
 
 .yoga-exp-content p {
     font-size: 15px;
     margin-bottom: 35px;
-    color:white;
+    color: #777;
 }
 
 .yoga-exp-content ul li {
     font-size: 17px;
     letter-spacing: 0;
     font-weight: 500;
-    color:white;
+    color: #666;
     line-height: 22px;
     margin: 15px 0px;
 }
 
 .yoga-exp-content ul li strong {
-    color:wheat;
+    color: #555;
     margin-right: 7px;
 }
 
