@@ -21,6 +21,15 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+<style>
+
+#eagle{
+display: none
+}
+
+
+</style>
 </head>
 
 <body>
@@ -38,7 +47,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-3">
-                        <div class="logo">
+                        <div id="eagle" class="logo">
                             <a href="index.html">
                                 <img src="assets/images/icon/logo.png" alt="logo">
                             </a>
@@ -645,6 +654,16 @@
     <!-- google map -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO_5h890WNShs_YLGivCBfs2U89qXR-7Y&callback=initMap"></script>
     <script src="assets/js/scripts.js"></script>
+
+    <script>
+        $(document).ready(function() {
+          $(function() {
+            $("#eagle")
+              .delay(2000)
+              .fadeIn("slow");
+          });
+        });
+      </script>
 </body>
 
 </html>
