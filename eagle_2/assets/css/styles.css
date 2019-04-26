@@ -409,7 +409,7 @@ a.scrl_me_down span {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.09em;
-    color: #ffcb2a;
+    color: #1589ca;
 }
 
 .section-title h2 {
@@ -2937,7 +2937,7 @@ ul.prc-list li {
     top: 0;
     height: 100%;
     width: 100%;
-    background: #000000;
+    background: #052a46;
     opacity: 0.7;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
