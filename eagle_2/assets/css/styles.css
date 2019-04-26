@@ -50,7 +50,7 @@
 }
 
 .sticky-menu {
-    background-color: #010101;
+    background-color: #fff;
 }
 
 .logo a {
@@ -991,11 +991,11 @@ ul.meta-info li a i {
 }
 
 .sticky-menu .btext-header nav ul li a {
-    color: #fff;
+    color: #1589ca;
 }
 
 .sticky-menu .btext-header nav ul li.active a {
-    color: #ffcb2a;
+    color: #000;
 }
 
 .yoga-hero {
