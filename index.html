@@ -112,6 +112,10 @@
       #branding {
         display: none;
       }
+
+      #custys{
+        display: none;
+      }
     </style>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/royal-preloader.css" />
@@ -858,7 +862,7 @@
           </div>
         </div>
         <!-- Clients grid -->
-        <div class="clients-grid">
+        <div id= "custys" class="clients-grid">
           <div class="animatedParent">
             <div class="animated fadeInUpShort">
               <div class="client seekedu">
@@ -1048,13 +1052,19 @@
         .fadeIn("slow");
     });
   });
-</script>
 
-    <script>
       $(document).ready(function() {
         $(function() {
           $("#branding")
             .delay(2000)
+            .fadeIn("slow");
+        });
+      });
+
+      $(document).ready(function() {
+        $(function() {
+          $("#custys")
+            .delay(4000)
             .fadeIn("slow");
         });
       });
