@@ -1,0 +1,47 @@
+/* =================================== */
+/*  About Us Styles 
+/* =================================== */
+
+.about-section {
+    text-align: center;
+    img {
+        @include transition();
+        &:hover {
+            opacity: .6;
+        }
+    }
+    .about-details {
+        text-align: center;
+        h4 {
+            padding: 20px 0px;
+        }
+    }
+}
+
+.app-about-section{
+    .about-left{
+        text-align: center;
+    }
+    .about-right{
+        p{
+            color:$primary-color;
+            font-size: 16px;
+            padding:20px 0;
+            margin-bottom: 0px;
+
+        }
+        ul{
+            li{
+                 list-style-type: square;
+                 color:$primary-color;
+                 font-size: 16px;
+                 margin-left: 20px;
+                 margin-bottom: 8px;
+            }
+        }   
+    }
+}
+
+.description-section{
+    padding-bottom:120px;
+}

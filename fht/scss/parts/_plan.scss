@@ -1,0 +1,36 @@
+/* =================================== */
+/*  Plan Styles 
+/* =================================== */
+
+.single-plan{
+    background: $primary-color;
+    color: $white;
+    padding:30px;
+    h3{
+        font-weight: 400;
+    }
+    .price{
+        padding:15px 0px;
+    }
+    h3,h4{
+        color: $white;
+    }
+    &.middle{
+        padding:50px;
+    }
+    &:hover{
+        @include transition();  
+        background: rgba($primary-color,.7);
+        .bar{
+            @include transition();
+            width: 100%;
+        }
+    }
+    .bar{
+        background: $white;
+        margin-top: 10px;
+        width: 45%;
+        height:2px;
+        display: block;
+    }
+}

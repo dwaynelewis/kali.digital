@@ -1,0 +1,30 @@
+.service-section{
+    h4,h1,p,i{
+        color: $white;
+    }
+
+    .service-left{
+        h1 {
+            padding: 20px 0px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $white;
+            text-transform: capitalize;
+        }
+        p{
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .service-right{
+        .single-service{
+            i{
+                font-size: 45px;
+                margin-bottom:20px;
+            }
+            h4{
+                font-weight: 400;
+            }
+        }
+    }
+}

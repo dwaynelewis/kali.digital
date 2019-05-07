@@ -1,0 +1,23 @@
+/* =================================== */
+/*  Footer Styles 
+/* =================================== */
+.footer-section{
+    .social_links{
+        text-align: right;
+        li{
+            display: inline-block;
+            a{
+                color: $white;
+                font-size: 30px;
+                margin-right:10px;
+                &:hover{
+                    color:$offwhite;
+                    @include transition();
+                }
+            }
+        }
+    }
+    .copyright-wrap{
+        padding-top:20px;
+    }   
+}

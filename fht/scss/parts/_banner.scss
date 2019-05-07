@@ -1,0 +1,79 @@
+/* =================================== */
+
+/*  Banner Styles 
+/* =================================== */
+
+.banner-section {
+    background: url(../img/head.JPG);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    .overlay-bg {
+        // background: rgba( #000, .1);
+    }
+    h1 {
+        padding: 20px 0;
+        font-size: 60px;
+        font-weight: 300;
+    }
+    p {
+        color: $title-color;
+        font-size: 16px;
+        max-width: 600px;
+        margin: 0 auto;
+        display: inline-block;
+    }
+    .action-buttons {
+        padding-top: 20px;
+        .primary-btn {
+            margin: 0px 10px;
+        }
+    }
+}
+
+.banner-two-section {
+    background-position: bottom;
+    background-size: cover;
+}
+
+.banner-two-section {
+    .overlay-bg {
+        background: rgba(#fff, .3);
+    }
+    h1 {
+        padding: 20px 0px;
+    }
+    p {
+        color: $primary-color;
+        max-width: 550px;
+        margin-bottom: 20px;
+    }
+    .apps-button {
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+.banner-three-section {
+    background: url(../img/banner3-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    .overlay-bg {
+        background: rgba(#000, .3);
+    }
+    h4,
+    h1,
+    p {
+        color: $white;
+    }
+    h1 {
+        padding: 20px 0px;
+    }
+    .apps-button {
+        .primary-btn {
+            margin-right: 10px;
+        }
+    }
+}

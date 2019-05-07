@@ -1,0 +1,19 @@
+/* =================================== */
+/*  Countdown Styles 
+/* =================================== */
+
+
+.single-countdown{
+    text-align: center;
+    background:$primary-color;
+    padding:30px;   
+    -webkit-box-shadow: 7px 9px 5px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 7px 9px 5px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 7px 9px 5px 1px rgba(0, 0, 0, 0.25);
+    h3,h4{
+        color:$white;
+    }
+    h3{
+        font-size: 45px;
+    }
+}

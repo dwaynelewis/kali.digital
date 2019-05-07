@@ -1,0 +1,37 @@
+/* =================================== */
+/*  Buttons Styles 
+/* =================================== */
+
+
+.primary-btn{
+    background-color: #fff;
+    font-family: $secondary-font;
+    min-width: 150px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;   
+    padding:10px 0px; 
+    color:$title-color;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    @include transition();
+    &:hover{
+        color:$white;
+        background:$primary-color;
+    }
+}
+
+.black-btn{
+    background:$primary-color;
+    color:$white;
+}
+
+.outline-btn{
+    border:1px solid transparent;
+    @include transition();
+    &:hover{
+        border-color:$white;
+    }
+}

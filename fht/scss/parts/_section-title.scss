@@ -1,0 +1,33 @@
+/* =================================== */
+/*  Section Title Styles 
+/* =================================== */
+
+.section-title{
+    padding-bottom:80px;
+    h1{
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        max-width: 320px;
+        text-transform: capitalize;
+        text-align: center;
+        margin: 0 auto;
+        border: 5px double #fff;
+    }
+    h3{
+        font-weight: 300;
+        text-align: center;
+        margin-top:20px;
+    }
+}
+
+.black-section-title{
+    h1{
+        background: $white;
+        color:$primary-color;
+        border-color:$primary-color;
+    }
+    h3{
+        color:$white;
+    }
+}

@@ -1,0 +1,56 @@
+/* =================================== */
+
+/*  Contact Styles 
+/* =================================== */
+
+#contact_form {
+    margin-top: 40px;
+}
+
+.contact-section {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        background: #fff;
+        border: 1px solid rgb(247, 247, 247);
+    }
+    textarea {
+        width: 100%;
+        height: 121px;
+    }
+    .send_btn {
+        width: 100%;
+        border: none;
+        float: right;
+        padding: 16px 50px;
+        font-size: 15px;
+        font-family: $secondary-font;
+        background-color: #333;
+        color: #ffffff;
+    }
+    .send_btn:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .success {
+        background: #00A243;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #B9ECCE;
+        border-radius: 5px;
+        font-weight: normal;
+        color: #fff;
+    }
+    .error {
+        background: #F44C4C;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #FFCACA;
+        border-radius: 5px;
+        font-weight: normal;
+        color: #fff;
+    }
+}

@@ -1,0 +1,156 @@
+/* =================================== */
+
+/*  Responsive Styles 
+/* =================================== */
+
+@media (max-width:1199px) {}
+
+@media (max-width:991px) {
+	.cta-section {
+		.primary-btn {
+			margin-top: 20px;
+		}
+	}
+	.about-section {
+		.single-about {
+			&:last-child {
+				margin-top: 30px;
+			}
+		}
+	}
+	.work-section {
+		.work-right {
+			margin-top: 30px;
+		}
+	}
+	.stat-section {
+		.single-stat {
+			margin-bottom: 20px;
+		}
+	}
+	.brands-section {
+		.single-brand {
+			margin-bottom: 30px;
+		}
+	}
+	.app-about-section {
+		.about-left {
+			margin-bottom: 30px;
+		}
+	}
+	.description-section {
+		.description-left {
+			margin-bottom: 30px;
+		}
+	}
+	.single-plan {
+		margin-bottom: 30px;
+	}
+	.single-portfolio {
+		margin-bottom: 30px;
+	}
+	.sidebar {
+		margin-top: 50px;
+	}
+	.latest-blog-section {
+		.single-latest-blog {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media (max-width:767px) {
+	.about-section {
+		.single-about {
+			margin-top: 30px !important;
+		}
+	}
+	.service-section {
+		.service-right {
+			margin-top: 30px;
+		}
+	}
+	.feature-section {
+		.single-feature {
+			padding-bottom: 40px;
+		}
+	}
+	.single-countdown {
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width:736px) {
+	.banner-section,
+	.banner-two-section,
+	.banner-three-section {
+		.fullscreen {
+			height: 700px !important;
+		}
+	}
+}
+
+@media (max-width:576px) {
+	.banner-section {
+		h1 {
+			font-size: 35px;
+		}
+	}
+	.work-section .work-left .b_tooltip {
+		left: 90%;
+	}
+	.service-section {
+		.service-right {
+			.single-service {
+				padding-bottom: 40px;
+			}
+		}
+	}
+	.footer-section {
+		.footer-left {
+			margin-bottom: 30px;
+			text-align: center;
+		}
+		.footer-right {
+			.social_links {
+				text-align: center !important;
+			}
+		}
+	}
+	.screenshot-section {
+		.single-screen {
+			margin: 0px 30px;
+		}
+	}
+	.bottom-tags {
+		ul li {
+			margin-bottom: 10px;
+		}
+	}
+	.replay-comment {
+		margin-left: -100px;
+	}
+}
+
+@media (max-width:480px) {
+	.banner-section {
+		.action-buttons {
+			.primary-btn {
+				margin-top: 20px;
+			}
+		}
+	}
+	.banner-three-section {
+		.apps-button {
+			.primary-btn {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.nxt-prev {
+		.primary-btn {
+			min-width: 110px;
+			font-size: 12px;
+		}
+	}
+}
