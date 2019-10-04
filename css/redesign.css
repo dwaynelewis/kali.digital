@@ -249,11 +249,11 @@ body {
 }
 
 .block-style-1 {
-  background-color: #181818;
+  background-color: #2682b4;
   color: #f6f6f6;
 }
 .block-style-2 {
-  background: #a80000;
+  background: #191970;
   color: #f6f6f6;
 }
 .block-style-3 {
@@ -261,10 +261,10 @@ body {
   color: #181818;
 }
 .block-style-4 {
-  background-color: #181818;
+  background-color: #2682b4;
 }
 .block-style-5 {
-  background: #181818;
+  background: #2682b4;
   color: whitesmoke;
 }
 
@@ -438,8 +438,8 @@ body {
 }
 
 #getstarted {
-  background-color: #d00000;
-  color: #222;
+  background-color: #606060;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -509,13 +509,13 @@ ul.social-list-display li {
 
 .clients {
   padding: 40px;
-  background: #232323;
+  background: #ffffff;
 }
 
 .clients .title {
-  color: #d00000;
+  color: #191970;
   text-decoration: underline;
-  text-decoration-color: white;
+  text-decoration-color: #2682b4;
   text-decoration-style: dotted;
 }
 
@@ -566,7 +566,7 @@ ul.social-list-display li {
 .footer {
   /* max-width: 1600px; */
   width: 100%;
-  background: #d00000;
+  background: #d2691e;
   padding: 40px 40px;
   color: #fff;
   display: grid;
