@@ -751,7 +751,7 @@
           <div class="animatedParent">
             <div class="animated fadeInUpShort">
               <div class="client seekedu">
-                <img src="images/logos/seeklogo.png" alt="logo" />
+                <img class="lazy" data-src="images/logos/seeklogo.png" alt="logo" />
               </div>
             </div>
           </div>
@@ -759,8 +759,8 @@
           <div class="animatedParent">
             <div class="animated fadeInUpShort">
               <div class="client seekedu">
-                <img
-                  src="images/logos/ee_logo.png"
+                <img class="lazy"
+                  data-src="images/logos/ee_logo.png"
                   alt="logo"
                   style="max-height: 150px;"
                 />
@@ -771,8 +771,8 @@
           <div class="animatedParent">
             <div class="animated fadeInUpShort">
               <div class="client seekedu">
-                <img
-                  src="images/logos/flhome_logo.jpg"
+                <img class="lazy"
+                  data-src="images/logos/flhome_logo.jpg"
                   alt="logo"
                   style="max-height: 150px;  margin-top: 50px;"
                 />
@@ -783,7 +783,7 @@
           <div class="animatedParent">
             <div class="animated fadeInUpShort">
               <div class="client dada">
-                <img src="images/logos/riptide.jpg" style="max-height: 175px;
+                <img class="lazy" data-src="images/logos/riptide.jpg" style="max-height: 175px;
                 margin-top: 50px; alt="logo" />
               </div>
             </div>
@@ -791,8 +791,8 @@
           <div class="animatedParent">
             <div class="animated fadeInUpShort">
               <div class="client clark-connections">
-                <img
-                  src="images/logos/clark connections logo links.png"
+                <img class="lazy"
+                  data-src="images/logos/clark connections logo links.png"
                   alt="logo"
                 />
               </div>
@@ -811,7 +811,7 @@
           <div class="animatedParent">
             <div class="animated fadeInUpShort">
               <div class="client dada">
-                <img src="images/logos/dada_logo.jpg" alt="logo" />
+                <img class="lazy" data-src="images/logos/dada_logo.jpg" alt="logo" />
               </div>
             </div>
           </div>
@@ -889,6 +889,7 @@
     <script type="text/javascript" src="js/css3-animate-it.js"></script>
     <script defer type="text/javascript" src="js/estimator-quiz.js"></script>
     <!-- <script type="text/javascript" src="js/custom-home-1.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
 
     <script type="text/javascript">
       // Royal_Preloader.config({
@@ -979,6 +980,16 @@
 
     
      
+    </script>
+
+    <script>
+
+      const myLazyLoad = new LazyLoad({
+
+        elements_selector: ".lazy"
+
+      });
+
     </script>
 
 <!-- <script src="./js/firebase.js"></script> -->
