@@ -2548,7 +2548,7 @@ section.single-content-section {
 	float:left;
 }
 .serv-media {
-	width:50%;
+	width:80%;
 }
 .serv-text {
 	width:50%;
@@ -3875,7 +3875,8 @@ section {
 	padding-bottom:12px;
 }
 .column-image {
-    padding: 100px 0;
+	padding: 100px 0;
+	height: 500px;
 }
 .author-social {
     float: left;
