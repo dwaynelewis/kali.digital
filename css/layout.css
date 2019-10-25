@@ -225,7 +225,7 @@ body.royal_preloader {
     height: 40px;
     line-height: 40px;
     margin: 0px;
-    color: darkred;
+    color: #d2691e;
     text-align: center;
     font-family: Arial;
     font-size: 12px;
@@ -328,7 +328,7 @@ body.royal_preloader {
 	margin-bottom: 0;
 }
 .menu-back{
-	background:   darkred;
+	background:   #d2691e;
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
@@ -342,7 +342,7 @@ body.royal_preloader {
 }
 
 .cbp-af-header.cbp-af-header-shrink {
-	background: red;
+	background: #2682b4;
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
