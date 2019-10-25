@@ -634,7 +634,7 @@ Mobile style's
 		transition : all 0.3s ease-out;
 	}
 	.cbp-af-header.cbp-af-header-shrink {
-		background:red;
+		background:#2682b4;
 		-webkit-transition : all 0.3s ease-out;
 		-moz-transition : all 0.3s ease-out;
 		-o-transition :all 0.3s ease-out;
