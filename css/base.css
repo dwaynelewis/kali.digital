@@ -173,7 +173,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: white;
+  color: inherit;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-align: center;
