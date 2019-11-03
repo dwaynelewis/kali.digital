@@ -17,7 +17,7 @@
 #ajax-form button:hover,
 #cd-zoom-in,
 #cd-zoom-out {
-  background-color: #ca3b01;
+  background-color: #411d69;
 }
 .cbp-af-header.cbp-af-header-shrink .menu ul li ul li a.curent-multi-page,
 .cbp-af-header.cbp-af-header-shrink .menu ul li ul li a.curent-multi-page:hover,
@@ -54,7 +54,7 @@
   background-color: #9e1030;
 }
 .morph {
-  fill: lightcoral;
+  fill: white;
 }
 .list-social-footer li:hover {
   background-color: white;
