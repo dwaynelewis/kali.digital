@@ -23,7 +23,7 @@
     mode: "scale_text",
     text: "your digital solution",
     text_colour: "#FFFFFF",
-    background: "#d2691e"
+    background: "#ca3b01"
   });
 
   //Home text fade on scroll

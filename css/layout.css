@@ -327,8 +327,8 @@ body.royal_preloader {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.menu-back{
-	background:   #d2691e;
+.menu-back{ 
+	background:   #ca3b01;
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
@@ -342,7 +342,7 @@ body.royal_preloader {
 }
 
 .cbp-af-header.cbp-af-header-shrink {
-	background: #2682b4;
+	background:  #ca3b01;
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
