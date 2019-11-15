@@ -339,7 +339,8 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  background: #363636;
+  /*background: #363636;*/
+  background: #ca3b01 ; /*firebrick*/
   margin-top: 10px;
   border: none;
   color: #dfdfdf;
@@ -361,7 +362,8 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
   color: #e74c3c;
-  background: #292929;
+  /*background: #292929;*/
+  background: #dfdfdf;
 }
 
 .button:active,
