@@ -68,7 +68,8 @@ i:before {
 body {
   font: 300 15px/28px "Poppins", sans-serif;
   letter-spacing: 0px;
-  color: #677294;
+  color: #411d69;
+  background-color: #d2bedd;
   padding: 0px;
   overflow-x: hidden;
   z-index: 0;
@@ -197,7 +198,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .f_p {
   font-family: "Poppins", sans-serif;
 }
-
+#5e2ced
 /*=========== font-weight ==============*/
 .f_300 {
   font-weight: 300;
@@ -3016,11 +3017,17 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   -webkit-transform: translateY(3rem);
   -ms-transform: translateY(3rem);
   transform: translateY(3rem);
-  -webkit-transition: opacity .5s .6s ease, -webkit-transform .5s .6s ease;
-  transition: opacity .5s .6s ease, -webkit-transform .5s .6s ease;
-  -o-transition: transform .5s .6s ease, opacity .5s .6s ease;
-  transition: transform .5s .6s ease, opacity .5s .6s ease;
-  transition: transform .5s .6s ease, opacity .5s .6s ease, -webkit-transform .5s .6s ease;
+  -webkit-transition: opacity .5s .6s ease,
+ -webkit-transform .5s .6s ease;
+  transition: opacity .5s .6s ease,
+ -webkit-transform .5s .6s ease;
+  -o-transition: transform .5s .6s ease,
+ opacity .5s .6s ease;
+  transition: transform .5s .6s ease,
+ opacity .5s .6s ease;
+  transition: transform .5s .6s ease,
+ opacity .5s .6s ease,
+ -webkit-transform .5s .6s ease;
   list-style: none;
   padding-left: 18%;
   padding-right: 100px;
@@ -4615,9 +4622,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 /*====================================================*/
 /*================= Start breadcrumb_area css =================*/
 .breadcrumb_area {
-  background-image: -moz-linear-gradient(180deg, #5e2ced 0%, #a485fd 100%);
+  /* background-image: -moz-linear-gradient(180deg, #5e2ced 0%, #a485fd 100%);
   background-image: -webkit-linear-gradient(180deg, #5e2ced 0%, #a485fd 100%);
-  background-image: -ms-linear-gradient(180deg, #5e2ced 0%, #a485fd 100%);
+  background-image: -ms-linear-gradient(180deg, #5e2ced 0%, #a485fd 100%); */
+  background-color:#ca3b01;
   position: relative;
   z-index: 1;
   padding: 235px 0px 125px;
