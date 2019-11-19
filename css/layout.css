@@ -3054,9 +3054,9 @@ figure.vimeo a img, figure.youtube a img {
 	padding: 14px 26px;
 	border-radius: 50px;
 	text-align:center;
-	background:darkred;
+	background:#411d69;
 	letter-spacing:2px;
-	color: #000;
+	color: #d2bedd;
 	-webkit-transition: background-color 0.3s, color 0.3s;
 	transition: background-color 0.3s, color 0.3s;
 }
