@@ -25,7 +25,7 @@
 	<!-- CSS
   ================================================== -->
 	<link rel="stylesheet" href="css/base.css"/>
-	<link rel="stylesheet" href="css/skeleton.css"/>
+	<link rel="stylesheet" href="css/skeleton.css"/> 
 	<link rel="stylesheet" href="css/layout.css"/>
 	<link rel="stylesheet" href="css/font-awesome.css" />
 	<link rel="stylesheet" href="css/ionicons.min.css"/>
@@ -251,5 +251,40 @@
 	
 <!-- End Document
 ================================================== -->
+
+<script type="text/javascript">
+    //<![CDATA[
+    $(function () {
+      $('#contactForm').on('submit',function (e) {
+        // prevent the page from refreshing on submit 
+        e.preventDefault();
+
+        // serialize form data to send to 'send' API
+        var formData = $('#contactForm').serialize();
+        console.log("formData submitted: ", formData);
+
+        // send serialized form data to 'send' API endpoint
+        $.ajax({
+          type: 'POST',
+          url: 'https://shielded-beach-77929.herokuapp.com/api/send',
+          data: formData,
+          // NOTE: this uses an 'error-msg' class which can be added as a custom class for displaying error text in a unique format (ex - red & bold)
+          success: function (response) {
+            // ToDo: display success message to the user, for example:           
+            $('#form-submit-message').text("Thank you for your message!").removeClass('error-msg');
+            console.log("response", response);
+          },
+          error: function (err) {
+            // ToDo: display error message to the user, for example:
+            $('#form-submit-message').text("There was a problem sending your message.  Please try again.  Thank you.").addClass('error-msg');
+            console.log("err", err);
+          }
+        });
+      });
+    });
+    
+  //]]>
+</script>
+
 </body>
 </html>
