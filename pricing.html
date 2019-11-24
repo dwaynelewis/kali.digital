@@ -64,6 +64,18 @@
    #form-submit-message{
 	   display:none
    }
+
+   #contactForm input {
+    padding: 6px 10px;
+    font-size: 18px;
+    width: 100%;
+}
+
+#contactForm textArea {
+    padding: 6px 10px;
+    font-size: 18px;
+    width: 100%;
+}
    </style>
 	
 </head>
@@ -442,9 +454,9 @@
 					<input name="email" id="email" type="text"  placeholder="E-Mail: *"/>
 				</div>
 				<div class="clear"></div>
-				<div class="six columns remove-top">
+				<div class="six columns">
 					<label for="message"></label>
-					<textarea name="message" id="message" placeholder="Tell Us Everything"></textarea>
+					<textarea name="message" id="message" placeholder="Tell Us Everything" rows="3"></textarea>
 				</div>
 				<div class="clear"></div>
 				<div class="six columns remove-top">
@@ -457,7 +469,7 @@
 			</form>	
 							
 			<div class="clear"></div>
-			<div id="form-submit-message">Successfully sent!!</div>
+			<div id="form-submit-message"></div>
 			<div class="clear"></div>
 		</div>
 	</div>
@@ -764,6 +776,11 @@
 <script type="text/javascript">
     //<![CDATA[
     $(function () {
+		
+		function hideTheForm() {
+			$('#contactForm').hide();
+		}
+
       $('#contactForm').on('submit',function (e) {
         // prevent the page from refreshing on submit 
         e.preventDefault();
@@ -779,11 +796,12 @@
           // NOTE: this uses an 'error-msg' class which can be added as a custom class for displaying error text in a unique format (ex - red & bold)
           success: function (response) {
             // ToDo: display success message to the user, for example:           
-            $('#form-submit-message').text("Thank you for your message!").removeClass('error-msg');
+			$('#form-submit-message').text("Thank you for your message!").removeClass('error-msg').show();
+			hideTheForm();
           },
           error: function (err) {
             // ToDo: display error message to the user, for example:
-            $('#form-submit-message').text("There was a problem sending your message.  Please try again.  Thank you.").addClass('error-msg');
+            $('#form-submit-message').text("There was a problem sending your message.  Please try again.  Thank you.").addClass('error-msg').show();
           }
         });
       });
