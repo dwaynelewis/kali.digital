@@ -1963,6 +1963,16 @@ figure.vimeo a img, figure.youtube a img {
 	width:100%;
 	display:block;
 }
+
+
+@media screen and (min-width: 768px) {
+	
+.img-wrap img{
+	width:75%;
+	margin: auto;
+	display:block;
+}
+}
 .project-des h6{
 	text-align:left;
 	padding-bottom:20px;
