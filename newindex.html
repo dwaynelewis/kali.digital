@@ -598,7 +598,7 @@
             <div class="block-small-heading">
               CONTACT US
             </div>
-            <div>
+            <div id="contactFormText">
                     Our team is always ready to work with exciting clients. If you're ready to start your best creative partnership experience with us, get in touch.
             </div>
             <div class="services-block-contents">
@@ -949,7 +949,8 @@
     $(function () {
 		
 		function hideTheForm() {
-			$('#contactForm').hide();
+            $('#contactForm').hide();
+            $('#contactFormText').hide();
 		}
 
       $('#contactForm').on('submit',function (e) {
