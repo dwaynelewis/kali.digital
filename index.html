@@ -315,13 +315,13 @@
                     <div class="menu-parent">
                       Contact
                     </div>
-                    <ul id="sub-menu-contact" style="display: none">
+                    <ul id="sub-menu-contact " style="display: none">
                       <li>
                         <a href="tel:7542168469">call now 754-216-8469</a>
                       </li>
                       <li>
                         <a
-                          href="#contactFormText"
+                          href="#contactFormText" id="mob-menu"
                          
                           >Email</a
                         >
@@ -914,6 +914,12 @@ Our Kali team finds the most effective way to communicate your value proposition
         });
 
         $(".mobile-nav-close").on("click", function() {
+          $(".mobile-nav-container").addClass("is-closed");
+          $(".mobile-nav-container").removeClass("is-open");
+        });
+      
+
+      $("#mob-menu").on("click", function() {
           $(".mobile-nav-container").addClass("is-closed");
           $(".mobile-nav-container").removeClass("is-open");
         });
