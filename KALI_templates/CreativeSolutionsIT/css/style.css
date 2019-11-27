@@ -68,7 +68,8 @@ i:before {
 body {
   font: 300 15px/28px "Poppins", sans-serif;
   letter-spacing: 0px;
-  color: #677294;
+  /*color: #677294;*/
+  color: grey;
   padding: 0px;
   overflow-x: hidden;
   z-index: 0;
@@ -3016,11 +3017,17 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   -webkit-transform: translateY(3rem);
   -ms-transform: translateY(3rem);
   transform: translateY(3rem);
-  -webkit-transition: opacity .5s .6s ease, -webkit-transform .5s .6s ease;
-  transition: opacity .5s .6s ease, -webkit-transform .5s .6s ease;
-  -o-transition: transform .5s .6s ease, opacity .5s .6s ease;
-  transition: transform .5s .6s ease, opacity .5s .6s ease;
-  transition: transform .5s .6s ease, opacity .5s .6s ease, -webkit-transform .5s .6s ease;
+  -webkit-transition: opacity .5s .6s ease,
+ -webkit-transform .5s .6s ease;
+  transition: opacity .5s .6s ease,
+ -webkit-transform .5s .6s ease;
+  -o-transition: transform .5s .6s ease,
+ opacity .5s .6s ease;
+  transition: transform .5s .6s ease,
+ opacity .5s .6s ease;
+  transition: transform .5s .6s ease,
+ opacity .5s .6s ease,
+ -webkit-transform .5s .6s ease;
   list-style: none;
   padding-left: 18%;
   padding-right: 100px;
@@ -4136,9 +4143,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   -ms-flex-align: center;
   align-items: center;
   min-height: 100vh;
-  background-image: -moz-linear-gradient(40deg, #5f51fb 0%, #767cfd 64%, #8ca7ff 100%);
-  background-image: -webkit-linear-gradient(40deg, #5f51fb 0%, #767cfd 64%, #8ca7ff 100%);
-  background-image: -ms-linear-gradient(40deg, #5f51fb 0%, #767cfd 64%, #8ca7ff 100%);
+  background-image: -moz-linear-gradient(40deg, #49475c 0%, #50516e 64%, #646979 100%);
+  background-image: -webkit-linear-gradient(40deg, #49475c 0%, #50516e 64%, #50516e 100%);
+  background-image: -ms-linear-gradient(40deg, #49475c 0%, #50516e 64%, #50516e 100%);
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -4157,9 +4164,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .digital_banner_area .round_shap {
   position: absolute;
   border-radius: 50%;
-  background-image: -moz-linear-gradient(50deg, #40dcfd 0%, #5286fd 36%, #632ffd 100%);
-  background-image: -webkit-linear-gradient(50deg, #40dcfd 0%, #5286fd 36%, #632ffd 100%);
-  background-image: -ms-linear-gradient(50deg, #40dcfd 0%, #5286fd 36%, #632ffd 100%);
+  background-image: -moz-linear-gradient(50deg, #49475c 0%, #50516e 36%, #646979 100%);
+  background-image: -webkit-linear-gradient(50deg, #49475c 0%, #50516e 36%, #646979 100%);
+  background-image: -ms-linear-gradient(50deg, #49475c 0%, #50516e 36%, #646979 100%);
   border-radius: 50%;
   z-index: -1;
 }
@@ -18205,9 +18212,9 @@ a .h_head:hover {
 
 /*========== h_blog_area css ========*/
 .h_action_promo_area {
-  background: #f8636b;
+  background: #a79af1;
   position: relative;
-  padding: 130px 0px;
+  padding: 130px 0px; 
   z-index: 1;
 }
 
