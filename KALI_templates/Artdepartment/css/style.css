@@ -99,7 +99,7 @@ body {
 } 
 /*--------------Typography--------------------------------------*/
 p {
-	font-size: 12px;
+	font-size: 16px;
 	line-height: 24px;
 	padding-bottom: 10px;
 	font-weight: 500;
@@ -1447,7 +1447,7 @@ blockquote p {
 .home-main_title_item h4 {
 	color: #fff;
 	text-transform:uppercase;
-	font-size:10px;
+	font-size:18px;
 	letter-spacing:2px;
 	text-align:left;
 	font-weight:500;
