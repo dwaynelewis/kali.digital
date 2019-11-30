@@ -55,6 +55,12 @@ body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
+.header-non-absolute {
+  position: relative;
+  width: 100%;
+  background-color: #e4e4e4;
+}
+
 .header-section-left {
   display: flex;
   align-items: center;
@@ -108,10 +114,11 @@ body {
 }
 
 .nav-desktop a:hover {
-  color: #f00000;
+  color: #691abf;
 }
 
 .nav-desktop .menu-parent {
+  color: #fff;
   position: relative;
   cursor: pointer;
   display: inline-block;
@@ -119,7 +126,7 @@ body {
 }
 
 .nav-desktop .menu-parent:hover {
-  color: #f00000;
+  color: #691abf;
 }
 .nav-desktop .menu-parent ul {
   display: none;
@@ -242,6 +249,13 @@ body {
 .span-5 {
   grid-column: auto/ span 5;
   --aspect-ratio: 5/1;
+}
+
+.span-1-2 {
+  grid-column: auto/ span 1;
+  grid-row: auto/ span 2;
+
+  --aspect-ratio: 2/1;
 }
 
 .span-2-2 {
@@ -392,6 +406,22 @@ body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
+.block-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/** only for portfolio - image overlays */
+
+.image-overlay-1 {
+  background-color: rgba(30, 8, 56, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
 /* block typography */
 .block-small-heading {
   font-weight: 700;
@@ -402,6 +432,13 @@ body {
 
 .block-big-heading {
   font-size: 48px;
+  margin: 0 0 24px;
+  line-height: 1em;
+  font-weight: 600;
+}
+
+.block-medium-heading-bottom {
+  font-size: 32px;
   margin: 0 0 24px;
   line-height: 1em;
   font-weight: 600;
@@ -816,7 +853,7 @@ ul.slick-dots li button:before {
     display: grid;
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: auto minmax(auto, 484px);
+    grid-template-rows: auto minmax(auto, 224px);
     grid-gap: 0;
   }
 
@@ -825,7 +862,7 @@ ul.slick-dots li button:before {
   .span-3,
   .span-4,
   .span-5,
-  .span-2-2,
+  .span-1-2 .span-2-2,
   .span-3-2 {
     grid-column: auto/ span 1;
     --aspect-ratio: 1/1;
@@ -863,5 +900,9 @@ ul.slick-dots li button:before {
 
   .clients-grid {
     grid-template-columns: 1fr;
+  }
+
+  .portfolio-page-video {
+    display: none;
   }
 }

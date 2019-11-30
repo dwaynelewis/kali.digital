@@ -103,6 +103,42 @@
         display: none;
       }
     </style>
+
+    <style>
+      ::placeholder {
+        color: rgba(255, 255, 255, 0.3);
+      }
+      #form-submit-message {
+        display: none;
+      }
+
+      #contactForm input {
+        padding: 6px 10px;
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 20px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        outline: none;
+        color: white;
+      }
+
+      #contactForm textarea {
+        padding: 6px 10px;
+        font-size: 18px;
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        outline: none;
+        color: white;
+      }
+
+      .error {
+        display: none;
+      }
+    </style>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/royal-preloader.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
@@ -163,7 +199,7 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag('config', 'UA-126384254-1');
+      gtag("config", "UA-126384254-1");
       gtag("config", "AW-771188212");
     </script>
 
@@ -175,8 +211,6 @@
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
   </head>
   <body>
     <div id="preloader">
@@ -186,12 +220,12 @@
       </div>
     </div>
     <div class="header-wrapper">
-      <div class="header">
+      <div class="header header-non-absolute">
         <!--Left part in header (all items aligned left)-->
         <div class="header-section-left">
-          <!-- <div class="logo-container">
+          <div class="logo-container">
             <img src="images/kalidigital.png" alt="logo" />
-          </div> -->
+          </div>
         </div>
 
         <!--Right part in header (items are justified), this takes entire remainining width with flex prop value set to "1"-->
@@ -215,10 +249,10 @@
                   </div>
                 </li>
                 <li>
-                    <div>
-                      <a href="pricing.html">Pricing</a>
-                    </div>
-                  </li>
+                  <div>
+                    <a href="pricing.html">Pricing</a>
+                  </div>
+                </li>
 
                 <li>
                   <div class="menu-parent">
@@ -265,7 +299,7 @@
                       <a href="#">Home</a>
                     </div>
                   </li> -->
-                  
+
                   <li>
                     <div>
                       <a href="about.html">About Us</a>
@@ -277,11 +311,10 @@
                     </div>
                   </li>
                   <li>
-                      <div>
-                        <a href="pricing.html">Pricing</a>
-                      </div>
-                    </li>
-                 
+                    <div>
+                      <a href="pricing.html">Pricing</a>
+                    </div>
+                  </li>
 
                   <li>
                     <div class="menu-parent">
@@ -309,190 +342,102 @@
     </div>
 
     <div class="page-wrapper">
-      <div>
-        <div class="banner-slider">
-          <div class="slide-container">
+      <section class="items-grid">
+        <div class="span-3-2 block-style-1 portfolio-page-video ">
+          <div class="block-contents video-block  ">
             <video
               preload="auto"
               autoplay=""
               muted=""
               loop=""
               playsinline=""
-              class="slide-media no-clip-video"
+              class="video-block-video"
               id="main-video"
             >
               <source src="assets/projects.mp4.mp4" type="video/mp4" />
             </video>
           </div>
-
-          <!-- <div class="slide-container">
-            <video id="vid-dancingman"
-              preload="auto"
-              autoplay=""
-              muted=""
-              loop=""
-              playsinline=""
-              class="slide-media"
-            >
-              <source
-                src="assets/citystreet.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>  -->
-          <!-- <div class="slide-container">
-            <img src="./images/agencyold.jpg" class="slide-media" alt="" />
-          </div> -->
-
-          <!-- <div class="slide-container ">
-            <video 
-              preload="auto"
-              autoplay=""
-              muted=""
-              loop=""
-              playsinline=""
-              class="slide-media"
-            >
-              <source
-                src="https://player.vimeo.com/external/322339906.sd.mp4?s=e5ab17608e82985ca5d6b8b9802292b32958d29d&profile_id=165"
-                type="video/mp4"
-              />
-            </video>
-          </div> -->
         </div>
-      </div>
-      <section class="items-grid">
-        <div class="span-3-2 block-style-1 animatedParent">
-          <div class="block-contents animated  ">
+        <div class="span-2-2 block-style-2 ">
+          <div class="block-contents   ">
             <div class="block-small-heading">
-              Developing Digital Design Solutions To Advance Your Company's
-              Future
+              Get in touch
             </div>
             <div class="block-big-heading">
-              We build advanced websites for those who want the best.
+              We would love to hear from you.
             </div>
-            <p>
-              Kali is a leading web design agency with an award-winning design
-              team that creates innovative, effective websites that capture your
-              brand, improve your conversion rates, and maximize your revenue to
-              help grow your business and achieve your goals.
-            </p>
-            <p>
-              In today’s digital world, your website is the first interaction
-              consumers have with your business — which is why almost 95 percent
-              of a user’s first impression relates to web design. It’s also why
-              web design services can have an immense impact on your company’s
-              bottom line. That’s why more companies are not only reevaluating
-              their website’s design but also partnering with Kali, to drive
-              increases in revenue. Call us today to start designing your
-              website or contact us online to tell us more about your business!
-            </p>
-            <p>
-              <a
-                class="link-button"
-                href="mailto:hello@kali.digital?Subject=Free%20Strategy%20Discussion"
-                target="_top"
-                >Free Strategy Session</a
-              >
-            </p>
-          </div>
-        </div>
-        <div class="span-2-2 block-style-2">
-          <div class="block-contents video-block">
-            <div class="video-block-container">
-              <video
-                id="citystreet"
-                preload="auto"
-                autoplay=""
-                muted=""
-                loop=""
-                playsinline=""
-                class="video-block-video"
-              >
-                <source src="assets/flht-condo-vid.MOV" type="video/mp4" />
-              </video>
-            </div>
-            <div class="video-block-overlay">
-              <div class="block-small-heading">
-                When Results Come In
+            <div>
+              <div class="container">
+                <form name="ajax-form" id="contactForm">
+                  <div class="three columns">
+                    <label for="name">
+                      <span class="error" id="err-name">please enter name</span>
+                    </label>
+                    <input
+                      name="name"
+                      id="name"
+                      type="text"
+                      placeholder="Your Name: *"
+                    />
+                  </div>
+                  <div class="three columns">
+                    <label for="email">
+                      <span class="error" id="err-email"
+                        >please enter e-mail</span
+                      >
+                      <span class="error" id="err-emailvld"
+                        >e-mail is not a valid format</span
+                      >
+                    </label>
+                    <input
+                      name="email"
+                      id="email"
+                      type="text"
+                      placeholder="E-Mail: *"
+                    />
+                  </div>
+                  <div class="clear"></div>
+                  <div class="six columns">
+                    <label for="message"></label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="Tell Us Everything"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="six columns remove-top">
+                    <div id="button-con">
+                      <button
+                        class="send_message button-effect button--moema button--text-thick button--text-upper button--size-s"
+                        id="send"
+                        data-lang="en"
+                        style="display:inline-block; background-color: rgba(0,0,0,0.4); border-radius:4px; border: 1px solid rgba(255,255,255, 0.1);"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="error text-align-left" id="err-form">
+                    There was a problem validating the form please check!
+                  </div>
+                  <div class="error text-align-left" id="err-timedout">
+                    The connection to the server timed out!
+                  </div>
+                  <div class="error" id="err-state"></div>
+                </form>
+
+                <div class="clear"></div>
+                <div id="form-submit-message"></div>
+                <div class="clear"></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="span-3-2">
-          <div class="block-contents video-block">
-            <div class="video-block-container">
-              <video
-                id="citystreet"
-                preload="auto"
-                autoplay=""
-                muted=""
-                loop=""
-                playsinline=""
-                class="video-block-video"
-              >
-                <source src="assets/riptidevid.MP4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="video-block-overlay">
-              <!-- <div class="block-small-heading">
-                When Results Come In
-              </div> -->
-            </div>
-          </div>
-        </div>
-        <div
-          class="span-1 block-style-4 "
-          style="color:#141414; background-color: #f6f6f6;"
-        >
-          <div class="block-contents">
-            <div class="testimonial-slider-container">
-              <div id="testimonial-slider-1" class="testimonial-slider">
-                <div class="testimonial-slide-container">
-                  Fiedtkou Security
-                  <p>
-                    Kali biz has been a great asset to our organization! The
-                    staff is always very attentive and listens to our needs. I
-                    would highly recommend them!
-                  </p>
-                </div>
-                <div class="testimonial-slide-container">
-                  Zaroly Fusion Restaurant
-                  <p>
-                    Great web design and the customer service exceeded my
-                    expectations.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="span-1 block-style-3 custom-block-1" style="color:white;">
-          <div class="block-contents">
-            <div class="testimonial-slider-container">
-              <div id="testimonial-slider-2" class="testimonial-slider">
-                <div class="testimonial-slide-container">
-                  Florida Home Traders
-                  <p>
-                    They put together a great plan that fits my budget! Kali got
-                    me really good results on Google, posted on my Facebook
-                    business page & responded to all reviews on Yelp.
-                  </p>
-                </div>
-                <div class="testimonial-slide-container">
-                  SEEK Incorporate
-                  <p>
-                    They created my google account for nonprofits and developed
-                    my new website! They are extremely professional and I would
-                    highly recommend this company for all marketing and
-                    technology needs.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="span-2-2 block-style-5 animatedParent">
+
+        <div class="span-3-2 block-style-5 animatedParent">
           <div class="block-contents">
             <div class="block-small-heading">
               COMPELLING WEBSITES AND DIGITAL MARKETING SERVICES
@@ -548,24 +493,39 @@
             </div>
           </div>
         </div>
-
-        <!----END PRICE ESTIMATOR QUIZ-->
-
-        <div class="span-2 block-style-2 animatedParent">
-          <div class="block-contents animated growIn">
+        <div class="span-2-2 block-style-1">
+          <div class="block-contents  video-block ">
+            <img src="./images/banner.png" alt="seek" class="block-bg-image" />
+          </div>
+          <div class="video-block-overlay">
             <div class="block-small-heading">
-             Our Brands
+              Brain Power
             </div>
-
-            <div class="block-big-heading">
-              Founders and Developers of Vividus TV
+            <div class="block-medium-heading-bottom ">
+              Web Design and Marketing
             </div>
-            <a href="https://www.vividus.tv/" style="color:white;"
-              >Find Out More</a
-            >
           </div>
         </div>
-        <div class="span-1 ">
+
+        <div class="span-2-2 block-style-3 ">
+          <div class="block-contents  video-block ">
+            <img
+              src="./images/dada-collage.jpg"
+              alt="dada"
+              class="block-bg-image"
+            />
+          </div>
+          <div class="video-block-overlay image-overlay-1">
+            <div class="block-small-heading">
+              DADA
+            </div>
+            <div class="block-medium-heading-bottom ">
+              Digital marketing
+            </div>
+          </div>
+        </div>
+
+        <div class="span-1-2 ">
           <div class="block-contents video-block">
             <div class="video-block-container">
               <video
@@ -580,245 +540,121 @@
                 <source src="assets/seekvid.mov" type="video/mp4" />
               </video>
             </div>
+            <div class="video-block-overlay">
+              <div class="block-small-heading">
+                SEEK
+              </div>
+              <div class="block-medium-heading-bottom ">
+                Marketing
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="span-2-2 block-style-3 ">
+          <div class="block-contents  video-block ">
+            <img src="./images/seek.jpg" alt="seek" class="block-bg-image" />
+          </div>
+          <div class="video-block-overlay">
+            <div class="block-small-heading">
+              SEEK
+            </div>
+            <div class="block-medium-heading-bottom ">
+              Web design
+            </div>
+          </div>
+        </div>
+        <div class="span-3-2 block-style-1 animatedParent">
+          <div class="block-contents animated  ">
+            <div class="block-small-heading">
+              Developing Digital Design Solutions To Advance Your Company's
+              Future
+            </div>
+            <div class="block-big-heading">
+              We build advanced websites for those who want the best.
+            </div>
+            <p>
+              Kali is a leading web design agency with an award-winning design
+              team that creates innovative, effective websites that capture your
+              brand, improve your conversion rates, and maximize your revenue to
+              help grow your business and achieve your goals.
+            </p>
+            <p>
+              In today’s digital world, your website is the first interaction
+              consumers have with your business — which is why almost 95 percent
+              of a user’s first impression relates to web design. It’s also why
+              web design services can have an immense impact on your company’s
+              bottom line. That’s why more companies are not only reevaluating
+              their website’s design but also partnering with Kali, to drive
+              increases in revenue. Call us today to start designing your
+              website or contact us online to tell us more about your business!
+            </p>
+            <p>
+              <a
+                class="link-button"
+                href="mailto:hello@kali.digital?Subject=Free%20Strategy%20Discussion"
+                target="_top"
+                >Free Strategy Session</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="span-2-2 block-style-2">
+          <div class="block-contents video-block">
+            <div class="video-block-container">
+              <video
+                id="citystreet"
+                preload="auto"
+                autoplay=""
+                muted=""
+                loop=""
+                playsinline=""
+                class="video-block-video"
+              >
+                <source src="assets/flht-condo-vid.MOV" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-block-overlay">
+              <div class="block-small-heading">
+                Florida Home Traders
+              </div>
+
+              <div class="block-medium-heading-bottom ">
+                Web Design and Marketing
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="span-2-2 block-style-1">
+          <div class="block-contents  video-block ">
+            <img src="./images/seek.jpg" alt="seek" class="block-bg-image" />
+          </div>
+          <div class="video-block-overlay">
+            <div class="block-small-heading">
+              LOKI-MIAMI
+            </div>
+            <div class="block-medium-heading-bottom ">
+              Web Design and Marketing
+            </div>
+          </div>
+        </div>
+        <div class="span-3-2 block-style-3">
+          <div class="block-contents  video-block ">
+            <img src="./images/agency.jpg" alt="seek" class="block-bg-image" />
+          </div>
+          <div class="video-block-overlay image-overlay-1">
+            <div class="block-small-heading">
+              Art Department
+            </div>
+            <div class="block-medium-heading-bottom ">
+              Web Design and Marketing
+            </div>
           </div>
         </div>
       </section>
 
-    
-
-
-      <section class="items-grid">
-          <div class="span-3-2 block-style-1 animatedParent">
-            <div class="block-contents animated  ">
-              <div class="block-small-heading">
-                Developing Digital Design Solutions To Advance Your Company's
-                Future
-              </div>
-              <div class="block-big-heading">
-                We build advanced websites for those who want the best.
-              </div>
-              <p>
-                Kali is a leading web design agency with an award-winning design
-                team that creates innovative, effective websites that capture your
-                brand, improve your conversion rates, and maximize your revenue to
-                help grow your business and achieve your goals.
-              </p>
-              <p>
-                In today’s digital world, your website is the first interaction
-                consumers have with your business — which is why almost 95 percent
-                of a user’s first impression relates to web design. It’s also why
-                web design services can have an immense impact on your company’s
-                bottom line. That’s why more companies are not only reevaluating
-                their website’s design but also partnering with Kali, to drive
-                increases in revenue. Call us today to start designing your
-                website or contact us online to tell us more about your business!
-              </p>
-              <p>
-                <a
-                  class="link-button"
-                  href="mailto:hello@kali.digital?Subject=Free%20Strategy%20Discussion"
-                  target="_top"
-                  >Free Strategy Session</a
-                >
-              </p>
-            </div>
-          </div>
-          <div class="span-2-2 block-style-2">
-            <div class="block-contents video-block">
-              <div class="video-block-container">
-                <video
-                  id="citystreet"
-                  preload="auto"
-                  autoplay=""
-                  muted=""
-                  loop=""
-                  playsinline=""
-                  class="video-block-video"
-                >
-                  <source src="assets/flht-soldvid.MOV" type="video/mp4" />
-                </video>
-              </div>
-              <div class="video-block-overlay">
-                <div class="block-small-heading">
-                  When Results Come In 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="span-3-2">
-            <div class="block-contents video-block">
-              <div class="video-block-container">
-                <!-- <video
-                  id="citystreet"
-                  preload="auto"
-                  autoplay=""
-                  muted=""
-                  loop=""
-                  playsinline=""
-                  class="video-block-video"
-                >
-                  <source src="assets/flht-mb-vid.MOV" type="video/mp4" />
-                </video> -->
-
-                <img
-                class="lazy"
-                data-src="images/dada-collage.jpg"
-                alt="logo"
-              />
-                
-              </div>
-              <div class="video-block-overlay">
-                <!-- <div class="block-small-heading">
-                  When Results Come In
-                </div> -->
-              </div>
-            </div>
-          </div>
-          <div
-            class="span-1 block-style-4 "
-            style="color:#141414; background-color: #f6f6f6;"
-          >
-            <div class="block-contents">
-              <div class="testimonial-slider-container">
-                <div id="testimonial-slider-1" class="testimonial-slider">
-                  <div class="testimonial-slide-container">
-                    Fiedtkou Security
-                    <p>
-                      Kali biz has been a great asset to our organization! The
-                      staff is always very attentive and listens to our needs. I
-                      would highly recommend them!
-                    </p>
-                  </div>
-                  <div class="testimonial-slide-container">
-                    Zaroly Fusion Restaurant
-                    <p>
-                      Great web design and the customer service exceeded my
-                      expectations.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="span-1 block-style-3 custom-block-1" style="color:white;">
-            <div class="block-contents">
-              <div class="testimonial-slider-container">
-                <div id="testimonial-slider-2" class="testimonial-slider">
-                  <div class="testimonial-slide-container">
-                    Florida Home Traders
-                    <p>
-                      They put together a great plan that fits my budget! Kali got
-                      me really good results on Google, posted on my Facebook
-                      business page & responded to all reviews on Yelp.
-                    </p>
-                  </div>
-                  <div class="testimonial-slide-container">
-                    SEEK Incorporate
-                    <p>
-                      They created my google account for nonprofits and developed
-                      my new website! They are extremely professional and I would
-                      highly recommend this company for all marketing and
-                      technology needs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="span-2-2 block-style-5 animatedParent">
-            <div class="block-contents">
-              <div class="block-small-heading">
-                COMPELLING WEBSITES AND DIGITAL MARKETING SERVICES
-              </div>
-              <div class="services-block-contents">
-                <div class="animatedParent">
-                  <div class="animated fadeInLeftShort">
-                    <h2 class="services-sub-heading">Websites</h2>
-                    <div class="service-offerings">
-                      <div>
-                        COPYWRITING
-                      </div>
-                      <div>
-                        ON-PAGE SEO
-                      </div>
-                      <div>
-                        LOGO DESIGN
-                      </div>
-                      <div>
-                        DATABASE INTEGRATION
-                      </div>
-                      <div>
-                        E-COMMERCE FUNCTIONALITY
-                      </div>
-                      <div>
-                        CMS
-                      </div>
-                    </div>
-  
-                    <h2 class="services-sub-heading">Marketing</h2>
-                    <div class="service-offerings">
-                      <div>
-                        BRANDING
-                      </div>
-                      <div>
-                        REBRANDING
-                      </div>
-                      <div>
-                        LOGO DESIGN
-                      </div>
-                      <div>
-                        DATABASE INTEGRATION
-                      </div>
-                      <div>
-                        E-COMMERCE FUNCTIONALITY
-                      </div>
-                      <div>
-                        CMS
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!----END PRICE ESTIMATOR QUIZ-->
-  
-          <div class="span-2 block-style-2 animatedParent">
-            <div class="block-contents animated growIn">
-              <div class="block-small-heading">
-               Our Brands
-              </div>
-  
-              <div class="block-big-heading">
-                Founders and Developers of Vividus TV
-              </div>
-              <a href="https://www.vividus.tv/" style="color:white;"
-                >Find Out More</a
-              >
-            </div>
-          </div>
-          <div class="span-1 ">
-            <div class="block-contents video-block">
-              <div class="video-block-container">
-                <video
-                  id="branding"
-                  preload="auto"
-                  autoplay=""
-                  muted=""
-                  loop=""
-                  playsinline=""
-                  class="video-block-video"
-                >
-                  <source src="assets/branding.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-        </section>
-  
-        <!--  -->
-
+      <!--  -->
     </div>
 
     <footer class="footer">
@@ -886,9 +722,7 @@
 
     <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
     <!-- <script type="text/javascript" src="js/royal_preloader.min.js"></script> -->
-    <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/css3-animate-it.js"></script>
-    <script defer type="text/javascript" src="js/estimator-quiz.js"></script>
     <!-- <script type="text/javascript" src="js/custom-home-1.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
 
@@ -910,30 +744,6 @@
 
       /// Banner Slider
       $(document).ready(function() {
-        $(".banner-slider").slick({
-          autoplay: true,
-          arrows: false,
-          autoplaySpeed: 10000,
-          dots: true,
-          pauseOnHover: true
-        });
-
-        $("#testimonial-slider-1").slick({
-          autoplay: true,
-          arrows: false,
-          autoplaySpeed: 4000,
-          dots: true,
-          pauseOnHover: true
-        });
-
-        $("#testimonial-slider-2").slick({
-          autoplay: true,
-          arrows: false,
-          autoplaySpeed: 4000,
-          dots: true,
-          pauseOnHover: true
-        });
-
         $(".mobile-nav .menu-parent").on("click", function() {
           $(this)
             .css("scrollTop", 50)
@@ -986,256 +796,49 @@
       });
     </script>
 
-    <!--- PRICE ESTIMATOR QUIZ MARKUP-->
-    <!-- <div class="block-contents">
-      <div class="block-small-heading">
-        PROJECT QUOTE CALCULATOR
-      </div>
-      
+    <script type="text/javascript">
+      //<![CDATA[
+      $(function() {
+        function hideTheForm() {
+          $("#contactForm").hide();
+          $("#contactFormText").hide();
+        }
 
-      <div class="quiz-container">
-        <h3 id="opening">
-          Answer the questions to indicate your needs and receive a free, instant quote.
-        </h3>
+        $("#contactForm").on("submit", function(e) {
+          // prevent the page from refreshing on submit
+          e.preventDefault();
 
-        <button id="getstarted">Get started</button>
-        <div id="ques1" class="question">
-          <p>1/10 Number of pages?</p>
-          <button
-            id="choice1a"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            New</button
-          ><br />
-          <button
-            id="choice1b"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Existing</button
-          ><br />
-          <button
-            id="choice1c"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Existing over 10 years
-          </button>
-        </div>
+          // serialize form data to send to 'send' API
+          var formData = $("#contactForm").serialize();
 
-        <h2 id="demo"></h2>
+          // send serialized form data to 'send' API endpoint
+          $.ajax({
+            type: "POST",
+            url: "https://kali-email-app.herokuapp.com/api/send",
+            data: formData,
+            // NOTE: this uses an 'error-msg' class which can be added as a custom class for displaying error text in a unique format (ex - red & bold)
+            success: function(response) {
+              // ToDo: display success message to the user, for example:
+              $("#form-submit-message")
+                .text("Thank you for your message!")
+                .removeClass("error-msg")
+                .show();
+              hideTheForm();
+            },
+            error: function(err) {
+              // ToDo: display error message to the user, for example:
+              $("#form-submit-message")
+                .text(
+                  "There was a problem sending your message.  Please try again.  Thank you."
+                )
+                .addClass("error-msg")
+                .show();
+            }
+          });
+        });
+      });
 
-      
-
-        <div id="ques2" class="question">
-          <p>2/10 Style of design?</p>
-          <button
-            id="choice2a"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Brand Awareness</button
-          ><br />
-          <button
-            id="choice2b"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Increasing Sales</button
-          ><br />
-          <button
-            id="choice2c"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Customer Loyalty
-          </button>
-        </div>
-
-        <div id="ques3" class="question">
-          <p>3/10 Copywriting number of pages?</p>
-          <button
-            id="choice3a"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Products</button
-          ><br />
-          <button
-            id="choice3b"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Service
-          </button>
-        </div>
-
-        <div id="ques4" class="question">
-          <p>4/10 CMS?</p>
-          <button
-            id="choice4a"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Yes</button
-          ><br />
-          <button
-            id="choice4b"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            No
-          </button>
-        </div>
-
-        <div id="ques5" class="question">
-          <p>5/10 SEO with placement guarantee?</p>
-          <button
-            id="choice5a"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Yes</button
-          ><br />
-          <button
-            id="choice5b"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            No</button
-          ><br />
-          <button
-            id="choice5c"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            N/A
-          </button>
-        </div>
-
-        <div id="ques6" class="question">
-          <p>
-            6/10 Database integration?
-          </p>
-          <button
-            id="choice6a"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Yes</button
-          ><br />
-          <button
-            id="choice6b"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            No
-          </button>
-        </div>
-
-        <div id="ques7" class="question">
-          <p>7/10 E-commerce functionality?</p>
-          <button
-            id="choice7a"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Women</button
-          ><br />
-          <button
-            id="choice7b"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Men</button
-          ><br />
-          <button
-            id="choice7c"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Both
-          </button>
-        </div>
-
-        <div id="ques8" class="question">
-          <p>8/10 Do you need your Google platform setup?</p>
-          <button
-            id="choice8a"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Yes</button
-          ><br />
-          <button
-            id="choice8b"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Yes, but it's not optmized.</button
-          ><br />
-          <button
-            id="choice8c"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            No
-          </button>
-        </div>
-
-        <div id="ques9" class="question">
-          <p>9/10 ?</p>
-          <button
-            id="choice9a"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            $0-$1000</button
-          ><br />
-          <button
-            id="choice9b"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            $1000-$2500</button
-          ><br />
-          <button
-            id="choice9c"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            $2500-
-          </button>
-        </div>
-
-        <div id="ques10" class="question">
-          <p>10/10 Are you comfortable in front of a video camera?</p>
-          <button
-            id="choice10a"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            Yes</button
-          ><br />
-          <button
-            id="choice10b"
-            type="button"
-            class="btn btn-outline-light text-light"
-          >
-            No
-          </button>
-        </div>
-
-        <div id="goodbye">
-          <h4>
-            If you would like a one on one assesment, please contact us
-            today!
-          </h4>
-        </div>
-      </div>
-    </div>  -->
-
-    <!----END PRICE ESTIMATOR QUIZ-->
+      //]]>
+    </script>
   </body>
 </html>
