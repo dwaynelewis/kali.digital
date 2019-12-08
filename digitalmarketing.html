@@ -102,6 +102,15 @@
       #clients {
         display: none;
       }
+      .bgimg {
+        background-image: url("./images/digitalmarketing/back333.jpg");
+      }
+      .center-video{
+        text-align: center;
+        display: flex;
+        align-content: center;
+        justify-content: center
+      }
     </style>
 
     <style>
@@ -343,73 +352,69 @@
 
     <div class="page-wrapper">
       <section class="items-grid">
-        <div class="span-3-2 block-style-5 animatedParent" style="z-index: 0;">
-          <div class="block-contents  video-block ">
-            <img
-              src="./images/digitalmarketing/back333.jpg"
-              alt="seek"
-              class="lazy block-bg-image"
-            />
-          </div>
-          <div class="video-block-overlay">
-            <div class="block-medium-heading-bottom">
-              OUR TEAM OF PRO’S TURN
-            </div>
-            <div class="block-big-heading" style="color: orange;">
-              YOUR $1 INTO $5*
-            </div>
-            <div class="block-small-heading">
-              using Facebook & Instagram Ads.No Joke.
-            </div>
-          
-           <div class="services-block-contents">
-              <iframe src="https://player.vimeo.com/video/135460384" width="432" height="208" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-          </div>
-         
-            <div class="block-small-heading">
-                *Results may vary but we’ll work our tails off to make sure you get the best.
+        
+          <div class="span-3-2 block-style-5 animatedParent bgimg">
+              <div class="block-contents animated fadeInLeftShort">     
+                  <div class="block-medium-heading-bottom">
+                      OUR TEAM OF PRO’S TURN
+                    </div>
+                    <div class="block-big-heading" style="color: orange;">
+                      YOUR $1 INTO $5*
+                    </div>
+                    <div class="block-small-heading">
+                      using Facebook & Instagram Ads. <span style="color:orange;">No Joke.</span>
+                    </div>
+                    <div class="center-video">
+                      <!-- <iframe width="420" height="345" src="https://player.vimeo.com/video/135460384">
+                      </iframe> -->
+                          <video
+                          preload="auto"
+                          autoplay=""
+                          muted=""
+                          loop=""
+                          playsinline=""
+                          class="video-block-video"
+                          id="main-video"
+                        >
+                          <source
+                            src="https://kalidigital.b-cdn.net/projects.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                    </div>
+                    <div class="block-small-heading" style="text-align: center;">
+                      <br>
+                        <a class="link-button" href="" target="_top">GET A FREE 30-MINUTE STRATEGY SESSION</a>
+                      </div>         
               </div>
-          
-          </div>
+          </div> 
 
-
-          <div id="button-con" class="services-block-contents">
-              <button
-                class="send_message button-effect button--moema button--text-thick button--text-upper button--size-s"
-                id="send"
-                data-lang="en"
-                style="display:inline-block; background-color: rgba(0,0,0,0.4); border-radius:4px; border: 1px solid rgba(255,255,255, 0.1); position:absolute;bottom: 10px;">
-                GET A FREE 30-MINUTE STRATEGY SESSION
-              </button>
-            </div>
-
-        </div>
         <div class="span-2-2 block-style-2 ">
           <div class="block-contents   ">
             <div class="block-small-heading">
-              Get in touch
+                Lead Form 
             </div>
             <div class="block-big-heading">
-              We would love to hear from you.
+                STRONG CALL TO ACTION
             </div>
             <div>
               <div class="container">
                 <form name="ajax-form" id="contactForm">
                   <div class="three columns">
                     <label for="name">
-                      <span class="error" id="err-name">please enter name</span>
+                      <span class="error" id="err-name">NAME</span>
                     </label>
                     <input
                       name="name"
                       id="name"
                       type="text"
-                      placeholder="Your Name: *"
+                      placeholder="Name: *"
                     />
                   </div>
                   <div class="three columns">
                     <label for="email">
                       <span class="error" id="err-email"
-                        >please enter e-mail</span
+                        >E-MAIL</span
                       >
                       <span class="error" id="err-emailvld"
                         >e-mail is not a valid format</span
@@ -423,18 +428,29 @@
                     />
                   </div>
                   <div class="three columns">
+                      <label for="phone">
+                        <span class="error" id="err-name">Phone</span>
+                      </label>
+                      <input
+                        name="phone-num"
+                        id="phone-num"
+                        type="number"
+                        placeholder="Phone: *"
+                      />
+                    </div>
+                  <div class="three columns">
                     <label for="name">
-                      <span class="error" id="err-name">please enter business size</span>
+                      <span class="error" id="err-name">business size</span>
                     </label>
                     <input
                       name="b_name"
                       id="b_name"
                       type="text"
-                      placeholder="Your Business Size: *"
+                      placeholder="Business Size: *"
                     />
                   </div>
-                  <div class="clear"></div>
-                  <div class="six columns">
+                  
+                  <!-- div class="six columns">
                     <label for="message"></label>
                     <textarea
                       name="message"
@@ -442,9 +458,9 @@
                       placeholder="Tell Us Everything"
                       rows="3"
                     ></textarea>
-                  </div>
+                  </div> -->
                   <div class="clear"></div>
-                  <div class="six columns remove-top">
+                  <div class="six columns remove-top" style="text-align: center;">
                     <div id="button-con">
                       <button
                         class="send_message button-effect button--moema button--text-thick button--text-upper button--size-s"
@@ -452,11 +468,15 @@
                         data-lang="en"
                         style="display:inline-block; background-color: rgba(0,0,0,0.4); border-radius:4px; border: 1px solid rgba(255,255,255, 0.1);"
                       >
-                        Submit
+                      Free Strategy Consultation
                       </button>
+                      <div class="block-small-heading" style="color: orange; ">
+                          Limited Offer
+                        </div>
                     </div>
                   </div>
                   <div class="clear"></div>
+                  
                   <div class="error text-align-left" id="err-form">
                     There was a problem validating the form please check!
                   </div>
@@ -474,83 +494,40 @@
           </div>
         </div>
 
-        <!-- <div class="span-3-2 block-style-5 animatedParent">
-          <div class="block-contents animated fadeInLeftShort ">
-            <div class="block-small-heading">
-              Good Marketing , Generates Sales, Great Marketing, Builds Brands
-            </div>
-            <div class="block-big-heading">
-              We build advanced websites for those who want the best.
-            </div>
-            <p>
-              Kali is a leading web design agency with an award-winning design
-              team that creates innovative, effective websites that capture your
-              brand, improve your conversion rates, and maximize your revenue to
-              help grow your business and achieve your goals.
-            </p>
-            <p>
-              In today’s digital world, your website is the first interaction
-              consumers have with your business — which is why almost 95 percent
-              of a user’s first impression relates to web design. It’s also why
-              web design services can have an immense impact on your company’s
-              bottom line. That’s why more companies are not only reevaluating
-              their website’s design but also partnering with Kali, to drive
-              increases in revenue. Call us today to start designing your
-              website or contact us online to tell us more about your business!
-            </p>
-            <p>
-              <a
-                class="link-button"
-                href="mailto:hello@kali.digital?Subject=Free%20Strategy%20Discussion"
-                target="_top"
-                >Free Strategy Session</a
-              >
-            </p>
-          </div>
-        </div> -->
-
-        <div class="span-3-2 block-style-5 animatedParent">
+        <div class="span-3-2 block-style-2 animatedParent">
             <div class="block-contents animated fadeInLeftShort ">
         <!-- <div class="span-2-2 block-style-2">
             <div class="block-contents animated"> 
               <div class="block-small-heading">
                 VALUE BASED PRICING
               </div> -->
-        <div class="block-medium-heading-bottom">
-            A HARD SELL ISN’T OUR STYLE BUT <br>
-            HERE’S 3 REASONS WHY OTHER <br>
-            COMPANIES CHOOSE US:
-
+        <div class="block-medium-heading-bottom" style="color: ivory;">
+            Increase REVENUE and OUTPERFORM <br>your competitors in 3 easy steps. 
           </div>
           <div class="services-block-contents">
             <div class="animatedParent">
               <div class="animated fadeInLeftShort">
                 <h1>01</h1>
-                <h5 class="services-sub-heading">WE BRING A BIG, BADASS TEAM OF EXPERTS TO THE TABLE.</h5>
+                <h5 class="services-sub-heading">FILL-OUT THE FORM</h5>
                 <div class="service-offerings">
-                  <p>We are a unique network of the top 1% of Facebook advertising experts worldwide that have managed millions of dollars in FB ad spend for some of the largest brands in the world.
-                    <br> For you this is peace-of-mind knowing you have an entire team of professionals backing you..
-                    <br>We won’t quit because when you profit, we profit.
+                  <p>Complete the form to receive a free face-to-face strategy consultation with top marketing experts to evaluate opportunities for your business. 
                   </p>
                 </div>
 
                 <h1>02</h1>
-                <h5 class="services-sub-heading">WE ARE FACEBOOK ADS SPECIALISTS & EXPERT MARKETERS—NOT THE JACk OF ALL TRADES, MASTER  OF NONE.</h5>
+                <h5 class="services-sub-heading">COLLABORATE WITH US</h5>
                 <div class="service-offerings">
-                  <p>We are a social media marketing agency specializing in Facebook advertising for leads, however we have experts that can help small businesses with (re)branding, WordPress website design, sales funnels and digital marketing such as email sequences, message bots, website copy & PPC.
+                  <p>Partner with us to build high-performance ad campaigns that increase brand awareness and engages your target audience to generate instant sales. 
                   </p>
                 </div>
 
                 <h1>03</h1>
-                <h5 class="services-sub-heading">WE BRING A BIG, BADASS TEAM OF EXPERTS TO THE TABLE.</h5>
+                <h5 class="services-sub-heading">DATA & ANALYTICS</h5>
                 <div class="service-offerings">
-                  <p>We offer flexible payment plans, so we can work with you, and your budget, to get exactly what you need to explode your revenue.
+                  <p>Watch us use data and analytics to increase revenue for your business and put your competition to shame. 
                   </p>
                 </div>
-                
-
-            
-
+  
                 <a class="link-button" href="#contactFormText">Get Offer</a>
               </div>
             </div>
@@ -558,16 +535,14 @@
         </div>
       </div>
 
-
-
         <div class="span-2-2 block-style-1">
           <div class="container">
-            <div class="services-block-contents">
-           
+            <div class="services-block-contents">           
+              <div class="clear"></div>
               <img
               src="https://images.clickfunnels.com/ed/6a221c6e92488ea5e2360a27290622/com-crop.gif"
-            
               class="lazy"
+              width="75%" height="75%"
             />
             </div>
             
@@ -585,26 +560,43 @@
           </div> -->
         </div>
 
+        <div class="span-5 block-style-2 animatedParent" style="background-color:#333333;">
+            <div class="block-contents animated fadeInLeftShort ">
+        <!-- <div class="span-2-2 block-style-2">
+            <div class="block-contents animated"> 
+              <div class="block-small-heading">
+                VALUE BASED PRICING
+              </div> -->
+        <div class="block-medium-heading-bottom" style="color: ivory;">
+            (Include image of ad campaign results) 
+          </div>
+          <div class="services-block-contents">
+            
+          </div>
+        </div>
+      </div>
+
+
+        <!--
         <div class="span-2-2 block-style-3 ">
           <div class="block-contents  video-block ">
-            <!-- <img
+            <img
               src="./images/dada-collage.jpg"
               alt="dada"
               class="block-bg-image"
-            /> -->
+            /> 
           </div>
           <div class="video-block-overlay image-overlay-1">
-           <!-- <div class="block-small-heading">
+            <div class="block-small-heading">
               DADA
             </div>
             <div class="block-medium-heading-bottom ">
               eCommerce
-            </div> -->
+            </div> 
           </div>
         </div>
-
         <div class="span-1-2 ">
-          <!-- <div class="block-contents video-block">
+           <div class="block-contents video-block">
             <div class="video-block-container">
               <video
                 id="branding"
@@ -629,112 +621,163 @@
                 STEM Education
               </div>
             </div>
-          </div> -->
+          </div> 
         </div>
-
         <div class="span-2-2 block-style-3 ">
           <div class="block-contents  video-block ">
-            <!-- <img
+           <img
               src="./images/bg-img1.22.JPG"
               alt="seek"
               class="block-bg-image"
-            /> -->
+            /> 
           </div>
           <div class="video-block-overlay  image-overlay-1">
-            <!-- <div class="block-small-heading">
+           <div class="block-small-heading">
               Eagle Eye
             </div>
             <div class="block-medium-heading-bottom ">
               Home Inspections
-            </div>  -->
+            </div> 
           </div>
         </div>
+      -->
         <div class="span-3-2 block-style-1 animatedParent">
           <div class="block-contents">
-            <div class="block-small-heading">
-              COMPELLING WEBSITES AND DIGITAL MARKETING SERVICES
+            <div class="block-medium-heading-bottom" style="color: ivory;">
+                Kali Digital is a full-service agency with the talent and expertise to generate immediate and long-term success for your business. 
             </div>
+            <p>Our experts manage your campaigns from start to finish and communicate with you every step of the way. Our goal as your partner is to drive sales for your business while building long-lasting relationships with your customers. We don't just convert consumers, we nurture brand advocates. This allows you to continue to increase profit even after the campaigns ends. Our innovative strategies and creative campaigns are second to none. Learn more about what we offer. </p>
             <div class="services-block-contents">
               <div class="animatedParent">
                 <div class="animated fadeInLeftShort">
-                  <h2 class="services-sub-heading">Websites</h2>
+                  <h2 class="services-sub-heading">Social Media Advertising ’Cloud’</h2>
                   <div class="service-offerings">
                     <div>
-                      COPYWRITING
+                        Customize Marketing Funnel
                     </div>
                     <div>
-                      ON-PAGE SEO
+                        High-Performance Campaigns
                     </div>
                     <div>
-                      LOGO DESIGN
+                        Custom Audiences 
                     </div>
                     <div>
-                      DATABASE INTEGRATION
+                        Award-Winning Ad Copy 
                     </div>
                     <div>
-                      E-COMMERCE FUNCTIONALITY
+                        Content Creation 
                     </div>
                     <div>
-                      CMS
+                        Re-targeting Ads 
+                    </div>
+                    <div>
+                        Dynamic Product Ads
+                    </div>
+                    <div>
+                        Messager  
+                    </div>
+                    <div>
+                        Pixel Tracking 
+                    </div>
+                    <div>
+                        Reporting and Analytics 
                     </div>
                   </div>
 
-                  <h2 class="services-sub-heading">Marketing</h2>
+                  <h2 class="services-sub-heading">Omnichannel Approach ’Cloud’</h2>
                   <div class="service-offerings">
                     <div>
-                      BRANDING
+                        Branding
                     </div>
                     <div>
-                      REBRANDING
+                        Social Media
                     </div>
                     <div>
-                      LOGO DESIGN
+                        Google Ads  
                     </div>
                     <div>
-                      DATABASE INTEGRATION
+                        Email Marketing
                     </div>
                     <div>
-                      E-COMMERCE FUNCTIONALITY
+                        Content Marketing/SEO 
                     </div>
                     <div>
-                      CMS
+                        Influencer Marketing 
+                    </div>
+                    <div>
+                        Affiliate/Loyalty Programs 
+                    </div>
+                    <div>
+                        Events 
+                    </div>
+                    <div>
+                        Analytics 
                     </div>
                   </div>
+                  <div class="clear"></div>
+                  <div class="six columns remove-top" style="text-align: center;">
+                    <div id="button-con">
+                      <button
+                        class="send_message button-effect button--moema button--text-thick button--text-upper button--size-s"
+                        id="send"
+                        data-lang="en"
+                        style="display:inline-block; background-color: rgba(0,0,0,0.4); border-radius:4px; border: 1px solid rgba(255,255,255, 0.1);"
+                      >
+                      Free Strategy Consultation
+                      </button>
+                      <div class="block-small-heading" style="color: ivory;">
+                          1-Hour Startegy Session with top Florida marketing experts<br> <span style="color: orange;">$1000</span> Claim your FREE Strategy Consultation Now   
+                        </div>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="span-2-2 block-style-2">
-          <div class="block-contents video-block">
-            <div class="video-block-container">
-              <video
-                id="citystreet"
-                preload="auto"
-                autoplay=""
-                muted=""
-                loop=""
-                playsinline=""
-                class="video-block-video"
-              >
-                <source
-                  src="https://kalidigital.b-cdn.net/flht-condo-vid.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-            <div class="video-block-overlay">
-              <div class="block-small-heading">
-                Florida Home Traders
+          <div class="block-contents">
+
+              <div class="block-medium-heading-bottom">
+                  See list below.
               </div>
 
-              <div class="block-medium-heading-bottom ">
-                Real Estate
-              </div>
-            </div>
+              <div class="block-small-heading">
+                  Feature brand logos from my client previous accounts.
+              
+                  
+              </div> 
+              <div class="service-offerings">
+                  <div>
+                      The Fresh Market 
+                  </div>
+                  <div>
+                      Logan's Roadhouse
+                  </div>
+                  <div>
+                      Cancer Treatment Centers of America
+                  </div>
+                  <div>
+                      Rejuvenate 
+                  </div>
+                  <div>
+                      Party City  
+                  </div>
+                  <div>
+                      Auto Nation 
+                  </div>
+                  <div>
+                      Kalorik
+                  </div>
+                </div>
+           
           </div>
         </div>
 
+     
+        <!-- 
         <div class="span-2-2 block-style-1">
           <div class="block-contents  video-block ">
             <img
@@ -768,7 +811,8 @@
               Publicity Agency
             </div>
           </div>
-        </div>
+        </div> -->
+        
       </section>
 
       <!--  -->
