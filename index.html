@@ -125,6 +125,27 @@
       .error {
         display: none;
       }
+
+      .float{
+        position:fixed;
+        width:275px;
+        height:40px;
+        bottom:15px;
+        left:50%;
+        transform: translateX(-50%);
+        background-color:#0C9;
+        color:#FFF;
+        border-radius:20px;
+        text-align:center;
+        box-shadow: 1px 1px 2px #999;
+    }
+    .float a:visited{
+      color: white;
+    }
+    
+    .my-float{
+      margin-top:12px;
+    }
     </style>
 
     <link rel="stylesheet" href="css/base.css" />
@@ -811,7 +832,9 @@
         </div>
       </div>
     </footer>
-
+    <a href="#contactFormText" class="float"> 
+      <i class="fa fa-rocket my-float"></i> Schedule a FREE Consultation 
+      </a>
     <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
     <!-- <script type="text/javascript" src="js/royal_preloader.min.js"></script> -->
     <script type="text/javascript" src="js/slick.min.js"></script>
