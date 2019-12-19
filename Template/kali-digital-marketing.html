@@ -25,6 +25,23 @@
                 line-height: 48px; 
                 font-size: 16px;
             }
+            #container-floating {
+            position: fixed;
+            width: 275px;
+            height: 22px;
+            bottom: 35px;
+            left: 20px;
+            z-index: 999;
+            }
+            .float{
+                background-color:#0C9;
+                transform: translateX(-50%);
+                color:#FFF;
+                border-radius:20px;
+                text-align:center;
+                box-shadow: 1px 1px 2px #999;
+                padding: 10px;
+            }
             </style>
 
 </head>
@@ -117,7 +134,7 @@
                         <h1 class="text-medium"> FOR THE </h1>
                         <h1 class="text-medium" style="color: indigo;"> RIGHT COST </h1>
                                
-                        <p>Get Started </p>
+                        <p  id="contact-us">Get Started </p>
                     </div>
                     <div class="row">
                         <div class="col-lg-8 center">
@@ -448,7 +465,13 @@
                 </div>
             </div>
     </section>
-    
+    <section>
+        <div id="container-floating">
+            <a href="#contact-us" class="float"> 
+                <i class="fa fa-rocket my-float"></i> Schedule a FREE Consultation 
+                </a>
+         </div>
+    </section>
      <!-- Footer -->
      <footer id="footer" class="text-light" style="background-color: #333333;">
             <div class="footer-content">
@@ -506,7 +529,7 @@
 
     </div>
     <!-- end: Body Inner -->
-
+    
     <!-- Scroll top -->
     <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
     <!--Plugins-->
