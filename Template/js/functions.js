@@ -116,7 +116,7 @@ var INSPIRO = {},
                         });
                     } else {
                         $scrollTop.css({
-                            'bottom': '26px',
+                            'bottom': '100px',
                             'opacity': 1,
                             'z-index': 199
                         });
