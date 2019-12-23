@@ -2497,7 +2497,7 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggler { margin: 0; top: -2px; paddi
 .hamburger-menu-links li.dropdown > a:after{content: "\f107"; display: inline-block; position: absolute; right: -60px; top: 15px; font-family: Font Awesome\ 5 Free; font-weight: 900; font-size: 42px}
 
 /* header style two */
-.header-with-topbar .navbar-top, .header-with-topbar .navbar-fixed-top {top: 36px; background: #fff; box-shadow: 0 4px 10px -10px rgba(0, 0, 0, 0.6)}
+.header-with-topbar .navbar-top, .header-with-topbar .navbar-fixed-top {top: 36px; background: #ca3b01; box-shadow: 0 4px 10px -10px rgba(0, 0, 0, 0.6)}
 .header-with-topbar.sticky .navbar-top {top: -160px;}
 .header-with-topbar.sticky.header-appear .navbar-top {top: 0;}
 
