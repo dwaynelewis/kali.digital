@@ -3410,7 +3410,7 @@ figure{ margin: 0; }
 
 /* skillbar bar style 3  */
 .skillbar-bar-style3 .skillbar { position: relative; display: inline-block; margin: 15px 0 30px; background: rgba(255,255,255,.2); height: 5px; width: 88%; text-align: left;  }
-.skillbar-bar-style3 .skillbar-bar { height: 5px; width: 0px; display: inline-block; position: absolute; top: 0; margin: 0; overflow: visible; background: #ff214f; background: -moz-linear-gradient(left, #ff214f 0%, #ffffff 100%); background: -webkit-linear-gradient(left, #ff214f 0%,#ffffff 100%); background: linear-gradient(to right, #ff214f 0%,#ffffff 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff214f', endColorstr='#ffffff',GradientType=1 ); }
+.skillbar-bar-style3 .skillbar-bar { height: 5px; width: 0px; display: inline-block; position: absolute; top: 0; margin: 0; overflow: visible; background: #ca3b01; background: -moz-linear-gradient(left, #ca3b01 0%, #ffffff 100%); background: -webkit-linear-gradient(left, #ca3b01 0%,#ffffff 100%); background: linear-gradient(to right, #ca3b01 0%,#ffffff 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca3b01', endColorstr='#ffffff',GradientType=1 ); }
 .skillbar-bar-style3 .skill-bar-percent { position: absolute; top:13px; right: 0; }
 .skillbar-bar-style3 .skill-bar-text {top:15px; position: absolute}
 
