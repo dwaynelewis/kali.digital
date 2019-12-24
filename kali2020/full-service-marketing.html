@@ -45,6 +45,37 @@
         <!--[if IE]>
             <script src="js/html5shiv.js"></script>
         <![endif]-->
+
+        <style>
+            .div-center-logo {
+                line-height: 30px;
+                padding: 10px;
+                width: 100%;
+            }
+            #div-align-logo{
+                line-height: 48px; 
+                font-size: 16px;
+            }
+            #container-floating {
+            position: fixed;
+            width: 275px;
+            height: 22px;
+            bottom: 35px;
+            left: 20px;
+            z-index: 99;
+            }
+            .float{
+                background-color:indigo;
+                transform: translateX(-50%);
+                color:#FFF;
+                border-radius:20px;
+                text-align:center;
+                box-shadow: 1px 1px 2px #999;
+                padding: 10px;
+                z-index: 1;
+            }
+            </style>
+            
     </head>
 
     <body> 
@@ -271,6 +302,15 @@
             </section>
             <!-- end clients style 03 -->
           <!-- start footer --> 
+          <section>
+            <div class="container">
+                <div id="container-floating">
+                    <a href="#contact-us" class="float" style="color:ivory"> 
+                        <i class="fa fa-rocket my-float"></i>&nbsp;Schedule a FREE CONSULTATION
+                        </a>
+                 </div>
+            </div>
+          </section>
           <footer class="footer-strip-dark bg-black padding-50px-tb sm-padding-30px-tb">
             <div class="container">
                 <div class="row align-items-center">
