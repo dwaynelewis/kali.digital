@@ -3046,8 +3046,9 @@
     .counter-box-5 .counter-box .number {font-size: 50px; line-height: 50px;}
     .left-sidebar, .right-sidebar {padding:15px;}
 
-    /*scroll to top*/
+    /*scroll to top
     .scroll-top-arrow {display: none !important; opacity: 0 !important}
+    */
 
     /* text property */
     .md-text-middle-line::before { display: none;}
