@@ -256,7 +256,7 @@ a.text-very-light-gray-hover:hover {color:#ededed !important;}
 .bg-medium-light-gray {background-color:#ededed}
 .bg-light-gray {background-color:#f7f7f7}
 .bg-very-light-gray {background-color:#fafafa}
-.bg-deep-pink {background-color:#ca3b01;}
+.bg-deep-pink {background-color:#0069ff;}
 .bg-transparent-white { background-color: rgba(255,255,255,0.3); background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 37%, rgba(255,255,255,1) 96%, rgba(255,255,255,1) 100%); background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(37%, rgba(255,255,255,0)), color-stop(96%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1))); background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 37%, rgba(255,255,255,1) 96%, rgba(255,255,255,1) 100%); background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 37%, rgba(255,255,255,1) 96%, rgba(255,255,255,1) 100%); background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 37%, rgba(255,255,255,1) 96%, rgba(255,255,255,1) 100%); background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 37%, rgba(255,255,255,1) 96%, rgba(255,255,255,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 ); }
 .bg-transparent-black { background-color: rgba(0,0,0,0); background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%); background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0)), color-stop(37%, rgba(0,0,0,0)), color-stop(96%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1))); background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%); background: -o-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%); background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%); background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 ); }
 .bg-white-opacity { background-color: rgba(255, 255, 255, 0.85); }
@@ -2497,13 +2497,13 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggler { margin: 0; top: -2px; paddi
 .hamburger-menu-links li.dropdown > a:after{content: "\f107"; display: inline-block; position: absolute; right: -60px; top: 15px; font-family: Font Awesome\ 5 Free; font-weight: 900; font-size: 42px}
 
 /* header style two */
-.header-with-topbar .navbar-top, .header-with-topbar .navbar-fixed-top {top: 36px; background: #ca3b01; box-shadow: 0 4px 10px -10px rgba(0, 0, 0, 0.6)}
+.header-with-topbar .navbar-top, .header-with-topbar .navbar-fixed-top {top: 36px; background: #0069ff; box-shadow: 0 4px 10px -10px rgba(0, 0, 0, 0.6)}
 .header-with-topbar.sticky .navbar-top {top: -160px;}
 .header-with-topbar.sticky.header-appear .navbar-top {top: 0;}
 
 /* full width light transparent navigation */
 header nav.nav-full-width {width: 100%}
-.close-button-menu {float: right; padding: 10px; background-color: transparent; color: #232323; border: 0; position: absolute; height: 40px; width: 40px; outline: none; top: 20px; right: 20px}
+.close-button-menu {float: right; padding: 10px; background-color: transparent; color: #010d28 border: 0; position: absolute; height: 40px; width: 40px; outline: none; top: 20px; right: 20px}
 .full-width-pull-menu .dropdown-toggle {position: relative;}
 .full-width-pull-menu span.dropdown-toggle {position: absolute; right: 30px; width: 40px;  height: 40px; text-align: center; top: 43px; display: inline-block; vertical-align: middle; cursor: pointer; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%);}
 .full-width-pull-menu .dropdown .dropdown-toggle:before {content: ""; display: block; position: absolute; right: 20px; top: 15px; height: 11px; width: 1px; background: #232323;}
@@ -3410,7 +3410,7 @@ figure{ margin: 0; }
 
 /* skillbar bar style 3  */
 .skillbar-bar-style3 .skillbar { position: relative; display: inline-block; margin: 15px 0 30px; background: rgba(255,255,255,.2); height: 5px; width: 88%; text-align: left;  }
-.skillbar-bar-style3 .skillbar-bar { height: 5px; width: 0px; display: inline-block; position: absolute; top: 0; margin: 0; overflow: visible; background: #ca3b01; background: -moz-linear-gradient(left, #ca3b01 0%, #ffffff 100%); background: -webkit-linear-gradient(left, #ca3b01 0%,#ffffff 100%); background: linear-gradient(to right, #ca3b01 0%,#ffffff 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca3b01', endColorstr='#ffffff',GradientType=1 ); }
+.skillbar-bar-style3 .skillbar-bar { height: 5px; width: 0px; display: inline-block; position: absolute; top: 0; margin: 0; overflow: visible; background: #808794; background: -moz-linear-gradient(left, #808794 0%, #ffffff 100%); background: -webkit-linear-gradient(left, #808794 0%,#ffffff 100%); background: linear-gradient(to right, #808794 0%,#ffffff 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca3b01', endColorstr='#ffffff',GradientType=1 ); }
 .skillbar-bar-style3 .skill-bar-percent { position: absolute; top:13px; right: 0; }
 .skillbar-bar-style3 .skill-bar-text {top:15px; position: absolute}
 
