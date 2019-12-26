@@ -248,7 +248,7 @@ a.text-very-light-gray-hover:hover {color:#ededed !important;}
 .bg-transparent, .background-transparent {background-color: transparent;}
 .bg-white, .background-white {background-color:#fff;}
 .bg-black, .background-black {background-color:#000;}
-.bg-extra-dark-gray {background-color:#1c1c1c;}
+.bg-extra-dark-gray {background-color:#808794;}
 .bg-dark-gray {background-color:#757575;}
 .bg-extra-medium-gray {background-color:#939393;}
 .bg-medium-gray {background-color:#dbdbdb;}
@@ -3410,7 +3410,7 @@ figure{ margin: 0; }
 
 /* skillbar bar style 3  */
 .skillbar-bar-style3 .skillbar { position: relative; display: inline-block; margin: 15px 0 30px; background: rgba(255,255,255,.2); height: 5px; width: 88%; text-align: left;  }
-.skillbar-bar-style3 .skillbar-bar { height: 5px; width: 0px; display: inline-block; position: absolute; top: 0; margin: 0; overflow: visible; background: #808794; background: -moz-linear-gradient(left, #808794 0%, #ffffff 100%); background: -webkit-linear-gradient(left, #808794 0%,#ffffff 100%); background: linear-gradient(to right, #808794 0%,#ffffff 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca3b01', endColorstr='#ffffff',GradientType=1 ); }
+.skillbar-bar-style3 .skillbar-bar { height: 5px; width: 0px; display: inline-block; position: absolute; top: 0; margin: 0; overflow: visible; background: #031b4e; background: -moz-linear-gradient(left, #031b4e 0%, #ffffff 100%); background: -webkit-linear-gradient(left, #031b4e 0%,#ffffff 100%); background: linear-gradient(to right, #031b4e 0%,#ffffff 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca3b01', endColorstr='#ffffff',GradientType=1 ); }
 .skillbar-bar-style3 .skill-bar-percent { position: absolute; top:13px; right: 0; }
 .skillbar-bar-style3 .skill-bar-text {top:15px; position: absolute}
 
