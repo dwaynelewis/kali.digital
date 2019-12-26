@@ -45,6 +45,28 @@
         <!--[if IE]>
             <script src="js/html5shiv.js"></script>
         <![endif]-->
+
+        <style>
+            #container-floating {
+            position: fixed;
+            width: 275px;
+            height: 22px;
+            bottom: 35px;
+            left: 20px;
+            z-index: 99;
+            }
+            .float{
+            background-color:black;
+            transform: translateX(-50%);
+            color:#FFF;
+            border-radius:20px;
+            text-align:center;
+            box-shadow: 1px 1px 2px #999;
+            padding: 10px;
+            z-index: 1;
+            }
+       
+            </style>
     </head>
     <body>
         <!-- start header -->
@@ -345,6 +367,17 @@
             </div>
         </section>
         <!-- end call to action section -->
+
+        <section style="padding:0;">
+            <div class="container">
+                <div id="container-floating">
+                    <a href="contactus.html" class="float" style="color:ivory"> 
+                        <i class="fa fa-rocket my-float"></i>&nbsp;Schedule a FREE CONSULTATION
+                        </a>
+                 </div>
+            </div>
+          </section>
+
        <!-- start footer --> 
        <footer class="footer-strip-dark bg-black padding-50px-tb sm-padding-30px-tb">
         <div class="container">
