@@ -273,12 +273,12 @@ body {
 }
 
 .block-style-1 {
-  background-color: black;
-  color: white;
+  background-color: #ca3b01;
+  color: #ffddca;
 }
 .block-style-2 {
-  background: white;
-  color: black;
+  background: #411d69;
+  color: #d2bedd;
 }
 .block-style-3 {
   background: white;
@@ -288,8 +288,8 @@ body {
   background-color: #d2691e;
 }
 .block-style-5 {
-  background-color: black;
-  color: white;
+  background-color: #ca3b01;
+  color: #ffddca;
 }
 
 /* Specific block styling (image back ground)*/
