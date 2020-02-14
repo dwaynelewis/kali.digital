@@ -87,7 +87,8 @@
         margin-bottom: 20px;
       }
 
-      #main-video {
+      #main-video,
+      #background-video {
         display: none;
       }
 
@@ -362,7 +363,7 @@
               id="main-video"
             >
               <source
-                src="https://kalidigital.b-cdn.net/car-dealership-vid.mp4"
+                src="https://kalidigital.b-cdn.net/car-dealerships-vid.mp4"
                 type="video/mp4"
               />
             </video>
@@ -376,7 +377,7 @@
               id="background-video"
             >
               <source
-                src="https://kalidigital.b-cdn.net/car-dealership-vid.mp4"
+                src="https://kalidigital.b-cdn.net/car-dealerships-vid.mp4"
                 type="video/mp4"
               />
             </video>
@@ -933,6 +934,10 @@
       $(document).ready(function() {
         $(function() {
           $("#main-video")
+            .delay(1000)
+            .fadeIn("slow");
+
+          $("#background-video")
             .delay(1000)
             .fadeIn("slow");
         });
