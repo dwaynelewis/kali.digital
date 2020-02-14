@@ -198,6 +198,10 @@ body {
 .slide-media {
   width: 100%;
   height: 80vh;
+  object-fit: cover;
+}
+
+.slide-media.car-dealership-video {
   object-fit: contain;
   z-index: 10;
   position: relative;
@@ -206,18 +210,6 @@ body {
   right: 0;
   background: #2e71c1;
 }
-
-.slide-media-behind {
-  width: 100%;
-  height: 80vh;
-  object-fit: cover;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: 5;
-}
-
 /*Items Grid*/
 
 .items-grid {
@@ -866,6 +858,10 @@ ul.slick-dots li button:before {
     height: 50vh;
   }
 
+  .slide-media.car-dealership-video {
+    object-fit: cover;
+  }
+
   .items-grid {
     display: grid;
     width: 100%;
@@ -921,5 +917,11 @@ ul.slick-dots li button:before {
 
   .portfolio-page-video {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide-media.car-dealership-video {
+    object-fit: cover;
   }
 }
