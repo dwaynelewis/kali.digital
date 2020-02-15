@@ -87,7 +87,8 @@
         margin-bottom: 20px;
       }
 
-      #main-video {
+      #main-video,
+      #background-video {
         display: none;
       }
 
@@ -239,18 +240,18 @@
         <!--Left part in header (all items aligned left)-->
         <div class="header-section-left">
           <div class="logo-container">
-            <img src="images/kalidigital.png" alt="logo" />
+            <!-- <img src="images/kalidigital.png" alt="logo" /> -->
           </div>
         </div>
 
         <!--Right part in header (items are justified), this takes entire remainining width with flex prop value set to "1"-->
         <div class="header-section-right">
-          <div class="navigation nav-desktop">
+          <!-- <div class="navigation nav-desktop">
             <nav>
               <ul>
                 <li>
                   <div>
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                   </div>
                 </li>
                 <li>
@@ -260,7 +261,7 @@
                 </li>
                 <li>
                   <div>
-                    <a href="car-dealerships.html">Car Dealers</a>
+                    <a href="howwedoit.html">Our Process</a>
                   </div>
                 </li>
                 <li>
@@ -275,9 +276,9 @@
                     <ul id="sub-menu-contact">
                       <li>
                         <div class="call-link">
-                          <a href="tel:7542168469"
+                          <a href="tel:8883973913"
                             >call now
-                            <span class="phone-num">(754) 216-8469</span></a
+                            <span class="phone-num">(888) 397-3913</span></a
                           >
                         </div>
                       </li>
@@ -289,8 +290,8 @@
                 </li>
               </ul>
             </nav>
-          </div>
-          <div class="nav-mobile">
+          </div> -->
+          <!-- <div class="nav-mobile">
             <div class="mobile-nav-icon">
               <i class="fa fa-bars"></i>
             </div>
@@ -305,11 +306,7 @@
               </div>
               <nav class="mobile-nav">
                 <ul>
-                  <!-- <li>
-                    <div>
-                      <a href="#">Home</a>
-                    </div>
-                  </li> -->
+               
 
                   <li>
                     <div>
@@ -318,7 +315,7 @@
                   </li>
                   <li>
                     <div>
-                      <a href="car-dealerships.html">Car Dealers</a>
+                      <a href="howwedoit.html">Our Process</a>
                     </div>
                   </li>
                   <li>
@@ -333,7 +330,7 @@
                     </div>
                     <ul id="sub-menu-contact " style="display: none">
                       <li>
-                        <a href="tel:7542168469">call now 754-216-8469</a>
+                        <a href="tel:8883973913">call now (888) 397-3913</a>
                       </li>
                       <li>
                         <a href="#contactFormText" id="mob-menu">Email</a>
@@ -343,7 +340,7 @@
                 </ul>
               </nav>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -358,14 +355,28 @@
               muted=""
               loop=""
               playsinline=""
-              class="slide-media no-clip-video"
+              class="slide-media car-dealership-video"
               id="main-video"
             >
               <source
-                src="https://kalidigital.b-cdn.net/kali_digital_keystrokes.mp4"
+                src="https://kalidigital.b-cdn.net/car-dealerships-vid.mp4"
                 type="video/mp4"
               />
             </video>
+            <!-- <video
+              preload="auto"
+              autoplay=""
+              muted=""
+              loop=""
+              playsinline=""
+              class="slide-media-behind"
+              id="background-video"
+            >
+              <source
+                src="https://kalidigital.b-cdn.net/car-dealerships-vid.mp4"
+                type="video/mp4"
+              />
+            </video> -->
           </div>
 
           <!-- <div class="slide-container">
@@ -406,29 +417,79 @@
         </div>
       </div>
       <section class="items-grid">
-        <div class="span-3-2 block-style-1 animatedParent">
+        <div
+          class="span-3-2 block-style-1 animatedParent"
+          style="background-color: #3333CC;  color:#F0F8FF;"
+        >
+          <div class="block-small-heading">
+            SERVICES
+          </div>
+          <div class="block-big-heading">
+            Results Driven
+          </div>
+          <div class="services-block-contents">
+            <div class="animatedParent">
+              <div class="animated fadeInLeftShort">
+                <h2 class="services-sub-heading">Facebook</h2>
+                <h4 class="services-sub-heading">
+                  Get More Out Of Your Paid Social Budget.
+                </h4>
+                <div class="service-offerings">
+                  <div>
+                    Ready To Grow Your Business? Dealers are investing more
+                    money into Facebook to be where shoppers are, but with one
+                    BIG problem: your inventory feed hasn’t been able to sync
+                    with Facebook like other 3rd parties, and manually creating
+                    vehicle ads is a huge hassle. That’s what our new Facebook
+                    Inventory Ads for auto dealers are here to fix.
+                  </div>
+                </div>
+
+                <h2 class="services-sub-heading">Google</h2>
+                <h4 class="services-sub-heading">
+                  Experienced Google Ads Management
+                </h4>
+                <div class="service-offerings">
+                  <div>
+                    Our approach to Google Ads management is hands-on and
+                    performance driven. If you need better results with Google
+                    Ads, our Google team will review your account—free of
+                    charge.
+                  </div>
+                </div>
+
+                <!-- <h2 class="services-sub-heading">Memorable Creative</h2>
+                <h4 class="services-sub-heading">$399.99 A Month</h4>
+                <div class="service-offerings">
+                  <div>
+                    We Deliver Compelling Experiences To Our Clients And Their
+                    Customers.
+                  </div>
+                </div> -->
+
+                <a class="link-button" href="#contactFormText">Get Offer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="span-2-2 block-style-2"
+          style="background-color: #3333FF; color:#F0F8FF;"
+        >
           <div class="block-contents animated  ">
             <div class="block-small-heading">
-              IT Solutions To Grow Your Company
+              Creative Marketing & IT Solutions To Scale
             </div>
             <div class="block-big-heading">
-              We build exceptional websites with better performance.
+              Ready To Grow Your Business?
             </div>
-            Kali is a leading web design agency with an award-winning design
-            team that creates innovative, effective websites that capture your
-            brand, improve your conversion rates, and maximize your revenue to
-            help grow your business and achieve your goals. <br />
-            In today’s digital world, your website is the first interaction
-            consumers have with your business — which is why almost 95 percent
-            of a user’s first impression relates to web design. It’s also why
-            web design services can have an immense impact on your company’s
-            bottom line. That’s why more companies are not only reevaluating
-            their website’s design but also partnering with Kali, the web design
-            agency that’s drives revenue for its clients. Call us today start
-            designing your website or contact us online to tell us more about
-            your business!<br /><br /><br /><br />
+            Stop paying agencies thousands to manage your dealership's SEM
+            campaigns. Kali makes smarter decisions in seconds with automated
+            machine learning technology. Social Media Advertising. Google Search
+            Ads (SEM) Sold Vehicles Reporting. Competitor Tracking.<br /><br /><br /><br />
 
-            <div class="block-small-heading">
+            <!-- <div class="block-small-heading">
               MARKETING FOR A DIGITAL WORLD
             </div>
             <div class="block-big-heading">
@@ -445,35 +506,7 @@
             core of their business. Partner with Kali to establish digital
             marketing campaigns that drive revenue. Call us today to start
             developing your digital strategy or contact us online to tell us
-            more about your business!
-            <br /><br />
-            <a class="link-button" href="#contactFormText"
-              >Free Strategy Session</a
-            >
-          </div>
-        </div>
-
-        <div class="span-2-2 block-style-2" style="padding-right: 25px;">
-          <div class="block-contents animated  ">
-            <div class="block-small-heading">
-              We analyze a company's position in the market to identify
-              opportunities
-            </div>
-            <div class="block-big-heading">
-              Everything we do starts with strategy.
-            </div>
-            The marketing landscape is constantly evolving. Every day there are
-            new technologies, new opportunities, and new tactics you can employ
-            to engage with your audience. To achieve this, we ingrain ourselves
-            in your organization, getting to what really matters by asking the
-            tough questions. We then strategically identify the right platforms,
-            tactics and technologies that will deliver on your objectives. Our
-            executional experts work closely with your team throughout our
-            collaborative strategic processes. That means there is no disconnect
-            or handoff between what we plan to do and what we execute, ensuring
-            consistency and effectiveness across every initiative we implement.
-            <br /><br /><br /><br />
-
+            more about your business! -->
             <br /><br />
             <a class="link-button" href="#contactFormText"
               >Free Strategy Session</a
@@ -498,7 +531,10 @@
                 />
               </video>
             </div>
-            <div class="video-block-overlay">
+            <div
+              class="video-block-overlay"
+              style="color:white;  background-color: rgba(0, 0, 0, 0.4); padding: 2.5px 4px;"
+            >
               <div class="block-small-heading">
                 When Results Come In
               </div>
@@ -513,18 +549,20 @@
             <div class="testimonial-slider-container">
               <div id="testimonial-slider-1" class="testimonial-slider">
                 <div class="testimonial-slide-container">
-                  Fiedtkou Security
+                  Jarrett-Scott Ford
                   <p>
-                    Kali biz has been a great asset to our organization! The
-                    staff is always very attentive and listens to our needs. I
-                    would highly recommend them!
+                    Inventory ads are something I’ve never seen before. I’m able
+                    to automatically post my inventory to Facebook and put my
+                    vehicles right in shoppers’ hands. We’re getting more VDP
+                    results!”
                   </p>
                 </div>
                 <div class="testimonial-slide-container">
-                  Zaroly Fusion Restaurant
+                  Daryl Markovic
                   <p>
-                    Great web design and the customer service exceeded my
-                    expectations.
+                    Great to work with. Video productions and ads are top notch.
+                    Responsive when putting together strategic advertising for
+                    current and conquest customers.
                   </p>
                 </div>
               </div>
@@ -536,20 +574,17 @@
             <div class="testimonial-slider-container">
               <div id="testimonial-slider-2" class="testimonial-slider">
                 <div class="testimonial-slide-container">
-                  Florida Home Traders
+                  Luke Ninh
                   <p>
-                    They put together a great plan that fits my budget! Kali got
-                    me really good results on Google, posted on my Facebook
-                    business page & responded to all reviews on Yelp.
+                    Awesome guys! Thank you! We love working with you guys on
+                    Facebook and the help in moving more metal!
                   </p>
                 </div>
                 <div class="testimonial-slide-container">
-                  SEEK Incorporate
+                  Mandie Harrington
                   <p>
-                    They created my google account for nonprofits and developed
-                    my new website! They are extremely professional and I would
-                    highly recommend this company for all marketing and
-                    technology needs.
+                    Corey is amazing to work with. Very detail oriented, always
+                    quick to respond and very knowledgeable.
                   </p>
                 </div>
               </div>
@@ -557,90 +592,82 @@
           </div>
         </div>
         <div
-          class="span-2-2 block-style-5 animatedParent"
-          style="padding-right: 25px;"
+          class="span-2-2 block-style-2 "
+          style="background-color: #3333CC;  color:#F0F8FF;"
         >
-          <div class="block-contents">
+          <div class="block-contents   ">
             <div class="block-small-heading">
-              CONTACT US
+              Get in touch
             </div>
-            <div id="contactFormText">
-              Our team is always ready to work with exciting clients. If you're
-              ready to start your best creative partnership experience with us,
-              get in touch.
+            <div class="block-big-heading">
+              We would love to hear from you.
             </div>
-            <div class="services-block-contents">
-              <div class="animatedParent">
-                <div class="animated fadeInLeftShort">
-                  <div class="container">
-                    <form name="ajax-form" id="contactForm">
-                      <div class="three columns">
-                        <label for="name">
-                          <span class="error" id="err-name"
-                            >please enter name</span
-                          >
-                        </label>
-                        <input
-                          name="name"
-                          id="name"
-                          type="text"
-                          placeholder="Your Name: *"
-                        />
-                      </div>
-                      <div class="three columns">
-                        <label for="email">
-                          <span class="error" id="err-email"
-                            >please enter e-mail</span
-                          >
-                          <span class="error" id="err-emailvld"
-                            >e-mail is not a valid format</span
-                          >
-                        </label>
-                        <input
-                          name="email"
-                          id="email"
-                          type="text"
-                          placeholder="E-Mail: *"
-                        />
-                      </div>
-                      <div class="clear"></div>
-                      <div class="six columns">
-                        <label for="message"></label>
-                        <textarea
-                          name="message"
-                          id="message"
-                          placeholder="Tell Us Everything"
-                          rows="3"
-                        ></textarea>
-                      </div>
-                      <div class="clear"></div>
-                      <div class="six columns remove-top">
-                        <div id="button-con">
-                          <button
-                            class="send_message button-effect button--moema button--text-thick button--text-upper button--size-s"
-                            id="send"
-                            data-lang="en"
-                            style="display:inline-block; background-color: rgba(0,0,0,0.4); border-radius:4px; border: 1px solid rgba(255,255,255, 0.1);"
-                          >
-                            submit
-                          </button>
-                        </div>
-                      </div>
-                      <div class="clear"></div>
-                      <div class="error text-align-left" id="err-form">
-                        There was a problem validating the form please check!
-                      </div>
-                      <div class="error text-align-left" id="err-timedout">
-                        The connection to the server timed out!
-                      </div>
-                      <div class="error" id="err-state"></div>
-                    </form>
-
-                    <div class="clear"></div>
-                    <div id="form-submit-message"></div>
-                    <div class="clear"></div>
+            <div>
+              <div class="container">
+                <form name="ajax-form" id="contactForm">
+                  <div class="three columns">
+                    <label for="name">
+                      <span class="error" id="err-name">please enter name</span>
+                    </label>
+                    <input
+                      name="name"
+                      id="name"
+                      type="text"
+                      placeholder="Your Name: *"
+                    />
                   </div>
-                </div>
+                  <div class="three columns">
+                    <label for="email">
+                      <span class="error" id="err-email"
+                        >please enter e-mail</span
+                      >
+                      <span class="error" id="err-emailvld"
+                        >e-mail is not a valid format</span
+                      >
+                    </label>
+                    <input
+                      name="email"
+                      id="email"
+                      type="text"
+                      placeholder="E-Mail: *"
+                    />
+                  </div>
+                  <div class="clear"></div>
+                  <div class="six columns">
+                    <label for="message"></label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="Tell Us Everything"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="six columns remove-top">
+                    <div id="button-con">
+                      <button
+                        class="send_message button-effect button--moema button--text-thick button--text-upper button--size-s"
+                        id="send"
+                        data-lang="en"
+                        style="display:inline-block; background-color: rgba(0,0,0,0.4); border-radius:4px; border: 1px solid rgba(255,255,255, 0.1);"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="error text-align-left" id="err-form">
+                    There was a problem validating the form please check!
+                  </div>
+                  <div class="error text-align-left" id="err-timedout">
+                    The connection to the server timed out!
+                  </div>
+                  <div class="error" id="err-state"></div>
+                </form>
+
+                <div class="clear"></div>
+                <div id="form-submit-message"></div>
+                <div class="clear"></div>
               </div>
             </div>
           </div>
@@ -648,7 +675,10 @@
 
         <!----END PRICE ESTIMATOR QUIZ-->
 
-        <div class="span-2 block-style-2 animatedParent">
+        <div
+          class="span-2 block-style-2 animatedParent"
+          style="background-color: #3333FF; color:#F0F8FF;"
+        >
           <div class="block-contents animated growIn">
             <div class="block-small-heading">
               Our Brands
@@ -657,7 +687,9 @@
             <div class="block-big-heading">
               Founders and Developers of Vividus TV
             </div>
-            <a href="https://www.vividus.tv/" style="color:white;"
+            <a
+              href="https://www.vividus.tv/"
+              style="color:white; background-color: rgba(0, 0, 0, 0.4); padding: 10px 16px;"
               >Find Out More</a
             >
           </div>
@@ -679,99 +711,6 @@
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="clients">
-        <div class="animatedParent">
-          <div class="animated fadeInLeftShort">
-            <h2 class="title">Our Clients</h2>
-          </div>
-        </div>
-        <!-- Clients grid -->
-        <div id="custys" class="clients-grid">
-          <div class="animatedParent">
-            <div class="animated fadeInUpShort">
-              <div class="client seekedu">
-                <img
-                  class="lazy"
-                  data-src="images/logos/seeklogo.png"
-                  alt="logo"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="animatedParent">
-            <div class="animated fadeInUpShort">
-              <div class="client seekedu">
-                <img
-                  class="lazy"
-                  data-src="images/logos/ee_logo.png"
-                  alt="logo"
-                  style="max-height: 100px;"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="animatedParent">
-            <div class="animated fadeInUpShort">
-              <div class="client seekedu">
-                <img
-                  class="lazy"
-                  data-src="images/logos/flhome_logo.jpg"
-                  alt="logo"
-                  style="max-height: 100px;  margin-top: 50px;"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="animatedParent">
-            <div class="animated fadeInUpShort">
-              <div class="client dada">
-                <img class="lazy" data-src="images/logos/riptide.jpg"
-                style="max-height: 100px; margin-top: 50px; alt="logo" />
-              </div>
-            </div>
-          </div>
-          <div class="animatedParent">
-            <div class="animated fadeInUpShort">
-              <div class="client clark-connections">
-                <img
-                  class="lazy"
-                  data-src="images/logos/brainpower.JPG"
-                  alt="logo"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="animatedParent">
-            <div class="animated fadeInUpShort">
-              <div class="client clark-connections">
-                <img
-                  class="lazy"
-                  data-src="images/logos/lokilogo.jpg"
-                  alt="logo"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="animatedParent">
-            <div class="animated fadeInUpShort">
-              <div class="client dada">
-                <img
-                  class="lazy"
-                  data-src="images/logos/dada_logo.jpg"
-                  alt="logo"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End clients grid -->
       </section>
     </div>
 
@@ -796,7 +735,7 @@
         <div class="animated fadeInUpShort">
           <h2 class="footer-title">Get in Touch!</h2>
           <div>
-            <p>tel: <a href="tel:7542168469">(754) 216-8469</a></p>
+            <p>tel: <a href="tel:7542168469">(888) 397-3913</a></p>
             <p>
               <a href="mailto:hello@kali.digital">Email Us</a>
             </p>
@@ -919,6 +858,10 @@
       $(document).ready(function() {
         $(function() {
           $("#main-video")
+            .delay(1000)
+            .fadeIn("slow");
+
+          $("#background-video")
             .delay(1000)
             .fadeIn("slow");
         });

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -105,9 +105,6 @@
     </style>
 
     <style>
-      ::placeholder {
-        color: rgba(255, 255, 255, 0.3);
-      }
       #form-submit-message {
         display: none;
       }
@@ -116,29 +113,41 @@
         padding: 6px 10px;
         font-size: 18px;
         width: 100%;
-        margin-bottom: 20px;
-        background: none;
-        border: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        outline: none;
-        color: white;
+        margin-bottom: 10px;
       }
 
       #contactForm textarea {
         padding: 6px 10px;
         font-size: 18px;
         width: 100%;
-        background: none;
-        border: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        outline: none;
-        color: white;
       }
 
       .error {
         display: none;
       }
+
+      .float {
+        position: fixed;
+        width: 275px;
+        height: 40px;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 1px 1px 2px #999;
+      }
+      .float a:visited {
+        color: white;
+      }
+
+      .my-float {
+        margin-top: 12px;
+      }
     </style>
+
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/royal-preloader.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
@@ -148,6 +157,12 @@
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="stylesheet" href="./css/animations.css" />
     <link rel="stylesheet" href="./css/redesign.css" />
+
+    <link
+      rel="stylesheet"
+      href="price/vendors/themify-icon/themify-icons.css"
+    />
+
     <!-- <script type="text/javascript" src="js/custom-home-1.js"></script> -->
     <!-- <script type="text/javascript" src="js/modernizr.custom.js"></script> -->
 
@@ -183,7 +198,6 @@
       ><img
         height="1"
         width="1"
-        class="lazy"
         style="display:none"
         src="https://www.facebook.com/tr?id=372325253374563&ev=PageView&noscript=1"
     /></noscript>
@@ -216,20 +230,16 @@
   <body>
     <div id="preloader">
       <div class="blink-image">
-        <img
-          src="images/kalidigital.png"
-          alt="logo"
-          class="lazy preload-image"
-        />
+        <img src="images/kalidigital.png" alt="logo" class="preload-image" />
         <div>Delivering Digital Perfection</div>
       </div>
     </div>
     <div class="header-wrapper">
-      <div class="header header-non-absolute">
+      <div class="header">
         <!--Left part in header (all items aligned left)-->
         <div class="header-section-left">
           <div class="logo-container">
-            <img src="images/kalidigital.png" alt="lazy logo" />
+            <img src="images/kalidigital.png" alt="logo" />
           </div>
         </div>
 
@@ -240,7 +250,7 @@
               <ul>
                 <li>
                   <div>
-                    <a href="index.html">Home</a>
+                    <a href="#">Home</a>
                   </div>
                 </li>
                 <li>
@@ -250,14 +260,14 @@
                 </li>
                 <li>
                   <div>
-                    <a href="howwedoit.html">Our Process</a>
+                    <a href="car-dealerships.html">Car Dealers</a>
                   </div>
                 </li>
-                <!-- <li>
+                <li>
                   <div>
-                    <a href="pricing.html">Pricing</a>
+                    <a href="portfolio.html">Portfolio</a>
                   </div>
-                </li> -->
+                </li>
 
                 <li>
                   <div class="menu-parent">
@@ -272,11 +282,7 @@
                         </div>
                       </li>
                       <li>
-                        <a
-                          href="mailto:hello@kali.digital?Subject=Free%20Strategy%20Discussion"
-                          target="_top"
-                          >Email</a
-                        >
+                        <a href="#contactFormText">Email</a>
                       </li>
                     </ul>
                   </div>
@@ -290,20 +296,20 @@
             </div>
             <div class="mobile-nav-container is-closed">
               <div class="mobile-nav-header">
-                <!-- <div class="logo-container">
+                <div class="logo-container">
                   <img src="images/kalidigital.png" alt="logo" />
-                </div> -->
+                </div>
                 <div class="mobile-nav-close">
                   <i class="fa fa-2x fa-close"></i>
                 </div>
               </div>
               <nav class="mobile-nav">
                 <ul>
-                  <li>
+                  <!-- <li>
                     <div>
-                      <a href="index.html">Home</a>
+                      <a href="#">Home</a>
                     </div>
-                  </li>
+                  </li> -->
 
                   <li>
                     <div>
@@ -312,7 +318,12 @@
                   </li>
                   <li>
                     <div>
-                      <a href="howwedoit.html">Our Process</a>
+                      <a href="car-dealerships.html">Car Dealers</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <a href="portfolio.html">Portfolio</a>
                     </div>
                   </li>
 
@@ -320,16 +331,12 @@
                     <div class="menu-parent">
                       Contact
                     </div>
-                    <ul id="sub-menu-contact" style="display: none">
+                    <ul id="sub-menu-contact " style="display: none">
                       <li>
                         <a href="tel:7542168469">call now 754-216-8469</a>
                       </li>
                       <li>
-                        <a
-                          href="mailto:hello@kali.digital?Subject=Free%20Strategy%20Discussion"
-                          target="_top"
-                          >Email</a
-                        >
+                        <a href="#contactFormText" id="mob-menu">Email</a>
                       </li>
                     </ul>
                   </li>
@@ -342,245 +349,136 @@
     </div>
 
     <div class="page-wrapper">
-      <section class="items-grid">
-        <div class="span-3-2 block-style-1 portfolio-page-video ">
-          <div class="block-contents video-block  ">
+      <div>
+        <div class="banner-slider">
+          <div class="slide-container">
             <video
               preload="auto"
               autoplay=""
               muted=""
               loop=""
               playsinline=""
-              class="slide-media car-dealership-video"
+              class="slide-media no-clip-video"
               id="main-video"
             >
               <source
-                src="https://kalidigital.b-cdn.net/car-dealerships-vid.mp4"
+                src="https://kalidigital.b-cdn.net/kali_digital_keystrokes.mp4"
                 type="video/mp4"
               />
             </video>
           </div>
-        </div>
-        <div class="span-2-2 block-style-2 ">
-          <div class="block-contents   ">
-            <div class="block-small-heading">
-              Get in touch
-            </div>
-            <div class="block-big-heading">
-              We would love to hear from you.
-            </div>
-            <div>
-              <div class="container">
-                <form name="ajax-form" id="contactForm">
-                  <div class="three columns">
-                    <label for="name">
-                      <span class="error" id="err-name">please enter name</span>
-                    </label>
-                    <input
-                      name="name"
-                      id="name"
-                      type="text"
-                      placeholder="Your Name: *"
-                    />
-                  </div>
-                  <div class="three columns">
-                    <label for="email">
-                      <span class="error" id="err-email"
-                        >please enter e-mail</span
-                      >
-                      <span class="error" id="err-emailvld"
-                        >e-mail is not a valid format</span
-                      >
-                    </label>
-                    <input
-                      name="email"
-                      id="email"
-                      type="text"
-                      placeholder="E-Mail: *"
-                    />
-                  </div>
-                  <div class="clear"></div>
-                  <div class="six columns">
-                    <label for="message"></label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="Tell Us Everything"
-                      rows="3"
-                    ></textarea>
-                  </div>
-                  <div class="clear"></div>
-                  <div class="six columns remove-top">
-                    <div id="button-con">
-                      <button
-                        class="send_message button-effect button--moema button--text-thick button--text-upper button--size-s"
-                        id="send"
-                        data-lang="en"
-                        style="display:inline-block; background-color: rgba(0,0,0,0.4); border-radius:4px; border: 1px solid rgba(255,255,255, 0.1);"
-                      >
-                        Submit
-                      </button>
-                    </div>
-                  </div>
-                  <div class="clear"></div>
-                  <div class="error text-align-left" id="err-form">
-                    There was a problem validating the form please check!
-                  </div>
-                  <div class="error text-align-left" id="err-timedout">
-                    The connection to the server timed out!
-                  </div>
-                  <div class="error" id="err-state"></div>
-                </form>
 
-                <div class="clear"></div>
-                <div id="form-submit-message"></div>
-                <div class="clear"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="span-3-2 block-style-5 animatedParent">
-          <div class="block-contents animated fadeInLeftShort ">
-            <!-- <div class="span-2-2 block-style-2">
-            <div class="block-contents animated"> -->
-            <div class="block-small-heading">
-              VALUE BASED PRICING
-            </div>
-            <div class="block-big-heading">
-              Local prices. World class service.
-            </div>
-            <div class="services-block-contents">
-              <div class="animatedParent">
-                <div class="animated fadeInLeftShort">
-                  <h2 class="services-sub-heading">Landing Page</h2>
-                  <h4 class="services-sub-heading">$89.99 A Month</h4>
-                  <div class="service-offerings">
-                    <div>
-                      RESPONSIVE (MOBILE/TABLET)
-                    </div>
-
-                    <div>
-                      FREE 3 STOCK PHOTOS
-                    </div>
-                    <div>
-                      FREE DOMAIN REGISTRATION
-                    </div>
-                    <div>
-                      FREE WEB HOSTING
-                    </div>
-                    <div>
-                      GOOGLE MY BUSINESS SETUP
-                    </div>
-                    <div>
-                      ON-PAGE SEO WRITTEN TO PERFECTION
-                    </div>
-                  </div>
-
-                  <h2 class="services-sub-heading">Professional</h2>
-                  <h4 class="services-sub-heading">$199.99 A Month</h4>
-                  <div class="service-offerings">
-                    <div>
-                      UP TO 10 CUSTOMIZED PAGES
-                    </div>
-                    <div>
-                      GOOGLE FRIENDLY SITEMAP
-                    </div>
-                    <div>
-                      RESPONSIVE (MOBILE/TABLET)
-                    </div>
-
-                    <div>
-                      FREE 5 STOCK PHOTOS
-                    </div>
-                    <div>
-                      FREE DOMAIN REGISTRATION
-                    </div>
-                    <div>
-                      FREE WEB HOSTING
-                    </div>
-                    <div>
-                      GOOGLE MY BUSINESS SETUP
-                    </div>
-                    <div>
-                      ON-PAGE SEO WRITTEN TO PERFECTION
-                    </div>
-                  </div>
-
-                  <h2 class="services-sub-heading">E-Commerce</h2>
-                  <h4 class="services-sub-heading">$399.99 A Month</h4>
-                  <div class="service-offerings">
-                    <div>
-                      INVENTORY MANAGEMENT
-                    </div>
-
-                    <div>
-                      GOOGLE FRIENDLY SITEMAP
-                    </div>
-                    <div>
-                      RESPONSIVE (MOBILE/TABLET)
-                    </div>
-
-                    <div>
-                      FREE 5 STOCK PHOTOS
-                    </div>
-                    <div>
-                      FREE DOMAIN REGISTRATION
-                    </div>
-                    <div>
-                      FREE WEB HOSTING
-                    </div>
-                    <div>
-                      GOOGLE MY BUSINESS SETUP
-                    </div>
-                    <div>
-                      ON-PAGE SEO WRITTEN TO PERFECTION
-                    </div>
-                  </div>
-
-                  <a class="link-button" href="#contactFormText">Get Offer</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="span-2-2 block-style-1">
-          <div class="block-contents video-block">
-            <div class="video-block-container">
-              <video
-                id="citystreet"
-                preload="auto"
-                autoplay=""
-                muted=""
-                loop=""
-                playsinline=""
-                class="video-block-video"
-              >
-                <source src="images/meeting.MP4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="video-block-overlay">
-              <div class="block-small-heading">
-                BRAIN POWER
-              </div>
-
-              <div class="block-medium-heading-bottom ">
-                IT SERVICES
-              </div>
-            </div>
-          </div>
-          <!-- <div class="block-contents  video-block ">
-            <img src="./assets/bp1vid.MP4" alt="seek" class="block-bg-image" />
-          </div>
-          <div class="video-block-overlay  image-overlay-1">
-            <div class="block-small-heading">
-              Brain Power
-            </div>
-            <div class="block-medium-heading-bottom ">
-             IT Expertise
-            </div>
+          <!-- <div class="slide-container">
+             src="assets/homepage_header.MOV"
+            <video id="vid-dancingman"
+              preload="auto"
+              autoplay=""
+              muted=""
+              loop=""
+              playsinline=""
+              class="slide-media"
+            >
+              <source
+                src="assets/citystreet.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>  -->
+          <!-- <div class="slide-container">
+            <img src="./images/agencyold.jpg" class="slide-media" alt="" />
           </div> -->
+
+          <!-- <div class="slide-container ">
+            <video 
+              preload="auto"
+              autoplay=""
+              muted=""
+              loop=""
+              playsinline=""
+              class="slide-media"
+            >
+              <source
+                src="https://player.vimeo.com/external/322339906.sd.mp4?s=e5ab17608e82985ca5d6b8b9802292b32958d29d&profile_id=165"
+                type="video/mp4"
+              />
+            </video>
+          </div> -->
+        </div>
+      </div>
+      <section class="items-grid">
+        <div class="span-3-2 block-style-1 animatedParent">
+          <div class="block-contents animated  ">
+            <div class="block-small-heading">
+              IT Solutions To Grow Your Company
+            </div>
+            <div class="block-big-heading">
+              We build exceptional websites with better performance.
+            </div>
+            Kali is a leading web design agency with an award-winning design
+            team that creates innovative, effective websites that capture your
+            brand, improve your conversion rates, and maximize your revenue to
+            help grow your business and achieve your goals. <br />
+            In today’s digital world, your website is the first interaction
+            consumers have with your business — which is why almost 95 percent
+            of a user’s first impression relates to web design. It’s also why
+            web design services can have an immense impact on your company’s
+            bottom line. That’s why more companies are not only reevaluating
+            their website’s design but also partnering with Kali, the web design
+            agency that’s drives revenue for its clients. Call us today start
+            designing your website or contact us online to tell us more about
+            your business!<br /><br /><br /><br />
+
+            <div class="block-small-heading">
+              MARKETING FOR A DIGITAL WORLD
+            </div>
+            <div class="block-big-heading">
+              We innovate world-class campaigns for those who want results.
+            </div>
+
+            Our strategic digital marketing solutions are designed to enhance
+            your website visibility, generate brand awareness, increase sales,
+            engage customers and ultimately drive the success of the business.
+            Business success depends upon your ability to attract and retain
+            customers. Our Kali team finds the most effective way to communicate
+            your value proposition by understanding your target audience. At
+            least 90% of all successful companies have good marketing at the
+            core of their business. Partner with Kali to establish digital
+            marketing campaigns that drive revenue. Call us today to start
+            developing your digital strategy or contact us online to tell us
+            more about your business!
+            <br /><br />
+            <a class="link-button" href="#contactFormText"
+              >Free Strategy Session</a
+            >
+          </div>
+        </div>
+
+        <div class="span-2-2 block-style-2" style="padding-right: 25px;">
+          <div class="block-contents animated  ">
+            <div class="block-small-heading">
+              We analyze a company's position in the market to identify
+              opportunities
+            </div>
+            <div class="block-big-heading">
+              Everything we do starts with strategy.
+            </div>
+            The marketing landscape is constantly evolving. Every day there are
+            new technologies, new opportunities, and new tactics you can employ
+            to engage with your audience. To achieve this, we ingrain ourselves
+            in your organization, getting to what really matters by asking the
+            tough questions. We then strategically identify the right platforms,
+            tactics and technologies that will deliver on your objectives. Our
+            executional experts work closely with your team throughout our
+            collaborative strategic processes. That means there is no disconnect
+            or handoff between what we plan to do and what we execute, ensuring
+            consistency and effectiveness across every initiative we implement.
+            <br /><br /><br /><br />
+
+            <br /><br />
+            <a class="link-button" href="#contactFormText"
+              >Free Strategy Session</a
+            >
+          </div>
         </div>
         <div class="span-3-2">
           <div class="block-contents video-block">
@@ -615,18 +513,19 @@
             <div class="testimonial-slider-container">
               <div id="testimonial-slider-1" class="testimonial-slider">
                 <div class="testimonial-slide-container">
-                  Jarrett-Scott Ford
+                  Fiedtkou Security
                   <p>
-                    Inventory ads are something I’ve never seen before. I’m able
-                    to automatically post my inventory to Facebook and put my
-                    vehicles right in shoppers’ hands. We’re getting more VDP
-                    clicks, call, everything – our results are through the
-                    roof.”
+                    Kali biz has been a great asset to our organization! The
+                    staff is always very attentive and listens to our needs. I
+                    would highly recommend them!
                   </p>
                 </div>
                 <div class="testimonial-slide-container">
                   Zaroly Fusion Restaurant
-                  <p>test</p>
+                  <p>
+                    Great web design and the customer service exceeded my
+                    expectations.
+                  </p>
                 </div>
               </div>
             </div>
@@ -639,10 +538,9 @@
                 <div class="testimonial-slide-container">
                   Florida Home Traders
                   <p>
-                    This is definitely the go to place if you are a dealer
-                    looking for a digital marketing solution. They have a ton of
-                    tools that are proven to get you leads. The team is
-                    extremely knowledgeable and excellent to work with.
+                    They put together a great plan that fits my budget! Kali got
+                    me really good results on Google, posted on my Facebook
+                    business page & responded to all reviews on Yelp.
                   </p>
                 </div>
                 <div class="testimonial-slide-container">
@@ -875,8 +773,6 @@
         </div>
         <!-- End clients grid -->
       </section>
-
-      <!--  -->
     </div>
 
     <footer class="footer">
@@ -941,10 +837,14 @@
         </div>
       </div>
     </footer>
-
+    <a href="#contactFormText" class="float">
+      <i class="fa fa-rocket my-float"></i> Schedule a FREE Consultation
+    </a>
     <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
     <!-- <script type="text/javascript" src="js/royal_preloader.min.js"></script> -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/css3-animate-it.js"></script>
+    <script defer type="text/javascript" src="js/estimator-quiz.js"></script>
     <!-- <script type="text/javascript" src="js/custom-home-1.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
 
@@ -966,6 +866,30 @@
 
       /// Banner Slider
       $(document).ready(function() {
+        $(".banner-slider").slick({
+          autoplay: true,
+          arrows: false,
+          autoplaySpeed: 10000,
+          dots: true,
+          pauseOnHover: true
+        });
+
+        $("#testimonial-slider-1").slick({
+          autoplay: true,
+          arrows: false,
+          autoplaySpeed: 4000,
+          dots: true,
+          pauseOnHover: true
+        });
+
+        $("#testimonial-slider-2").slick({
+          autoplay: true,
+          arrows: false,
+          autoplaySpeed: 4000,
+          dots: true,
+          pauseOnHover: true
+        });
+
         $(".mobile-nav .menu-parent").on("click", function() {
           $(this)
             .css("scrollTop", 50)
@@ -980,6 +904,11 @@
         });
 
         $(".mobile-nav-close").on("click", function() {
+          $(".mobile-nav-container").addClass("is-closed");
+          $(".mobile-nav-container").removeClass("is-open");
+        });
+
+        $("#mob-menu").on("click", function() {
           $(".mobile-nav-container").addClass("is-closed");
           $(".mobile-nav-container").removeClass("is-open");
         });
