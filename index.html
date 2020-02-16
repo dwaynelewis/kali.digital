@@ -21,16 +21,10 @@
     />
     <meta property="og:image" content="//yourdomain.com/image-name.jpg" />
     <meta property="og:type" content="website" />
-
-    <!-- <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&subset=latin-ext"
-      rel="stylesheet"
-    /> -->
-    <!--
     <link
-      href="https://fonts.googleapis.com/css?family=Shadows+Into+Light"
+      href="https://fonts.googleapis.com/css?family=Archivo:400,700&display=swap"
       rel="stylesheet"
-    /> -->
+    />
 
     <!-- CRITICAL CSS, we need this before anything else-->
     <style>
@@ -231,7 +225,7 @@
   <body>
     <div id="preloader">
       <div class="blink-image">
-        <img src="images/kalidigital.png" alt="logo" class="preload-image" />
+        <img src="images/kalilogoblack.png" alt="logo" class="preload-image" />
         <div>Delivering Digital Perfection</div>
       </div>
     </div>
@@ -240,107 +234,8 @@
         <!--Left part in header (all items aligned left)-->
         <div class="header-section-left">
           <div class="logo-container">
-            <!-- <img src="images/kalidigital.png" alt="logo" /> -->
+            <img src="images/kalilogowhite.png" alt="logo" />
           </div>
-        </div>
-
-        <!--Right part in header (items are justified), this takes entire remainining width with flex prop value set to "1"-->
-        <div class="header-section-right">
-          <!-- <div class="navigation nav-desktop">
-            <nav>
-              <ul>
-                <li>
-                  <div>
-                    <a href="index.html">Home</a>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <a href="about.html">About Us</a>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <a href="howwedoit.html">Our Process</a>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <a href="portfolio.html">Portfolio</a>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="menu-parent">
-                    Contact
-                    <ul id="sub-menu-contact">
-                      <li>
-                        <div class="call-link">
-                          <a href="tel:8883973913"
-                            >call now
-                            <span class="phone-num">(888) 397-3913</span></a
-                          >
-                        </div>
-                      </li>
-                      <li>
-                        <a href="#contactFormText">Email</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-          </div> -->
-          <!-- <div class="nav-mobile">
-            <div class="mobile-nav-icon">
-              <i class="fa fa-bars"></i>
-            </div>
-            <div class="mobile-nav-container is-closed">
-              <div class="mobile-nav-header">
-                <div class="logo-container">
-                  <img src="images/kalidigital.png" alt="logo" />
-                </div>
-                <div class="mobile-nav-close">
-                  <i class="fa fa-2x fa-close"></i>
-                </div>
-              </div>
-              <nav class="mobile-nav">
-                <ul>
-               
-
-                  <li>
-                    <div>
-                      <a href="about.html">About Us</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <a href="howwedoit.html">Our Process</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <a href="portfolio.html">Portfolio</a>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="menu-parent">
-                      Contact
-                    </div>
-                    <ul id="sub-menu-contact " style="display: none">
-                      <li>
-                        <a href="tel:8883973913">call now (888) 397-3913</a>
-                      </li>
-                      <li>
-                        <a href="#contactFormText" id="mob-menu">Email</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
@@ -358,10 +253,7 @@
               class="slide-media car-dealership-video"
               id="main-video"
             >
-              <source
-                src="https://kalidigital.b-cdn.net/car-dealerships-vid.mp4"
-                type="video/mp4"
-              />
+              <source src="./assets/header.vid.red.mp4" type="video/mp4" />
             </video>
             <!-- <video
               preload="auto"
@@ -417,20 +309,16 @@
         </div>
       </div>
       <section class="items-grid">
-        <div
-          class="span-3-2 block-style-1 animatedParent"
-          style="background-color: #3333CC;  color:#F0F8FF;"
-        >
-          <div class="block-small-heading">
-            SERVICES
-          </div>
-          <div class="block-big-heading">
-            Results Driven
-          </div>
-          <div class="services-block-contents">
-            <div class="animatedParent">
-              <div class="animated fadeInLeftShort">
-                <h2 class="services-sub-heading">Facebook</h2>
+        <div class="span-3-2 block-style-1">
+          <div class="animatedParent">
+            <div class="animated fadeInUp">
+              <div class="block-contents">
+                <div class="block-small-heading">
+                  SERVICES
+                </div>
+                <h2 class="block-big-heading">
+                  Facebook Ads
+                </h2>
                 <h4 class="services-sub-heading">
                   Get More Out Of Your Paid Social Budget.
                 </h4>
@@ -445,7 +333,9 @@
                   </div>
                 </div>
 
-                <h2 class="services-sub-heading">Google</h2>
+                <h2 class="block-big-heading">
+                  Google Ads
+                </h2>
                 <h4 class="services-sub-heading">
                   Experienced Google Ads Management
                 </h4>
@@ -458,59 +348,35 @@
                   </div>
                 </div>
 
-                <!-- <h2 class="services-sub-heading">Memorable Creative</h2>
-                <h4 class="services-sub-heading">$399.99 A Month</h4>
-                <div class="service-offerings">
-                  <div>
-                    We Deliver Compelling Experiences To Our Clients And Their
-                    Customers.
-                  </div>
-                </div> -->
-
-                <a class="link-button" href="#contactFormText">Get Offer</a>
+                <a class="link-button" href="#contactForm">Get Offer</a>
               </div>
             </div>
           </div>
         </div>
-
-        <div
-          class="span-2-2 block-style-2"
-          style="background-color: #3333FF; color:#F0F8FF;"
-        >
-          <div class="block-contents animated  ">
-            <div class="block-small-heading">
-              Creative Marketing & IT Solutions To Scale
+        <div class="span-2-2 block-style-2 ">
+          <div class="block-contents   ">
+            <div class="animatedParent">
+              <div class="animated fadeInUp">
+                <div class="block-small-heading">
+                  Creative Marketing & IT Solutions To Scale
+                </div>
+                <div class="block-big-heading">
+                  Ready To Grow Your Business?
+                </div>
+                <p>
+                  Stop paying agencies thousands to manage your dealership's SEM
+                  campaigns.
+                </p>
+                <p>
+                  Kali makes smarter decisions in seconds with automated machine
+                  learning technology. Social Media Advertising. Google Search
+                  Ads (SEM) Sold Vehicles Reporting. Competitor Tracking
+                </p>
+                <a class="link-button" href="#contactForm"
+                  >Free Strategy Session</a
+                >
+              </div>
             </div>
-            <div class="block-big-heading">
-              Ready To Grow Your Business?
-            </div>
-            Stop paying agencies thousands to manage your dealership's SEM
-            campaigns. Kali makes smarter decisions in seconds with automated
-            machine learning technology. Social Media Advertising. Google Search
-            Ads (SEM) Sold Vehicles Reporting. Competitor Tracking.<br /><br /><br /><br />
-
-            <!-- <div class="block-small-heading">
-              MARKETING FOR A DIGITAL WORLD
-            </div>
-            <div class="block-big-heading">
-              We innovate world-class campaigns for those who want results.
-            </div>
-
-            Our strategic digital marketing solutions are designed to enhance
-            your website visibility, generate brand awareness, increase sales,
-            engage customers and ultimately drive the success of the business.
-            Business success depends upon your ability to attract and retain
-            customers. Our Kali team finds the most effective way to communicate
-            your value proposition by understanding your target audience. At
-            least 90% of all successful companies have good marketing at the
-            core of their business. Partner with Kali to establish digital
-            marketing campaigns that drive revenue. Call us today to start
-            developing your digital strategy or contact us online to tell us
-            more about your business! -->
-            <br /><br />
-            <a class="link-button" href="#contactFormText"
-              >Free Strategy Session</a
-            >
           </div>
         </div>
         <div class="span-3-2">
@@ -531,10 +397,7 @@
                 />
               </video>
             </div>
-            <div
-              class="video-block-overlay"
-              style="color:white;  background-color: rgba(0, 0, 0, 0.4); padding: 2.5px 4px;"
-            >
+            <div class="video-block-overlay">
               <div class="block-small-heading">
                 When Results Come In
               </div>
@@ -542,7 +405,7 @@
           </div>
         </div>
         <div
-          class="span-1 block-style-4 "
+          class="span-1 block-style-4 testimonial-block"
           style="color:#141414; background-color: #f6f6f6;"
         >
           <div class="block-contents">
@@ -569,7 +432,10 @@
             </div>
           </div>
         </div>
-        <div class="span-1 block-style-3 custom-block-1" style="color:white;">
+        <div
+          class="span-1 block-style-3 custom-block-1 testimonial-block"
+          style="color:white;"
+        >
           <div class="block-contents">
             <div class="testimonial-slider-container">
               <div id="testimonial-slider-2" class="testimonial-slider">
@@ -591,10 +457,7 @@
             </div>
           </div>
         </div>
-        <div
-          class="span-2-2 block-style-2 "
-          style="background-color: #3333CC;  color:#F0F8FF;"
-        >
+        <div class="span-2-2 block-style-1">
           <div class="block-contents   ">
             <div class="block-small-heading">
               Get in touch
@@ -645,13 +508,8 @@
                   <div class="clear"></div>
                   <div class="six columns remove-top">
                     <div id="button-con">
-                      <button
-                        class="send_message button-effect button--moema button--text-thick button--text-upper button--size-s"
-                        id="send"
-                        data-lang="en"
-                        style="display:inline-block; background-color: rgba(0,0,0,0.4); border-radius:4px; border: 1px solid rgba(255,255,255, 0.1);"
-                      >
-                        Submit
+                      <button class="link-button" id="send" data-lang="en">
+                        Send
                       </button>
                     </div>
                   </div>
@@ -673,12 +531,7 @@
           </div>
         </div>
 
-        <!----END PRICE ESTIMATOR QUIZ-->
-
-        <div
-          class="span-2 block-style-2 animatedParent"
-          style="background-color: #3333FF; color:#F0F8FF;"
-        >
+        <div class="span-2 block-style-2 animatedParent">
           <div class="block-contents animated growIn">
             <div class="block-small-heading">
               Our Brands
@@ -776,17 +629,19 @@
         </div>
       </div>
     </footer>
-    <a
-      href="https://calendly.com/kali-mktg/digital-marketing-consultation"
-      class="float"
-    >
-      <i class="fa fa-rocket my-float"></i> Schedule a FREE Consultation
-    </a>
+
+    <div id="container-floating">
+      <a
+        href="https://calendly.com/kali-mktg/digital-marketing-consultation"
+        class="btn btn-rounded floating-cta opacity-1"
+      >
+        <i class="fa fa-rocket my-float"></i> Schedule a FREE Consultation
+      </a>
+    </div>
     <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
     <!-- <script type="text/javascript" src="js/royal_preloader.min.js"></script> -->
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/css3-animate-it.js"></script>
-    <script defer type="text/javascript" src="js/estimator-quiz.js"></script>
     <!-- <script type="text/javascript" src="js/custom-home-1.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
 

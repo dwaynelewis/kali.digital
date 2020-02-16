@@ -174,9 +174,8 @@ h4,
 h5,
 h6 {
   color: inherit;
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
 }
 h1 a,
 h2 a,
@@ -340,7 +339,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   /*background: #363636;*/
-  background: #ca3b01 ; /*firebrick*/
+  background: #ca3b01; /*firebrick*/
   margin-top: 10px;
   border: none;
   color: #dfdfdf;
