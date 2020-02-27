@@ -565,7 +565,7 @@ ul.side-nav li.sn-item > a > i {
   background: url(../images/main_profile_bg.jpg);
   background-position: center 0;
   background-size: cover;
-  padding-top: 100px;
+  padding-top: 50px;
   position: relative;
 }
 .main_profile {
